@@ -1,77 +1,51 @@
 ---
 title: Contact
 nav:
-  order: 5
+  order: 7
   tooltip: Email, address, and location
 ---
 
 # {% include icon.html icon="fa-regular fa-envelope" %}Contact
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+The lab is located in the [Department of Biochemistry & Molecular Biology](https://biochem.med.ufl.edu) in the [College of Medicine at the University of Florida](https://med.ufl.edu).
+
+
+
+{%
+  include figure.html
+  image="images/2021-04-20_Campus-Photos-5.jpg"
+  caption="Image courtesy of UF Photography"
+%}
 
 {%
   include button.html
   type="email"
-  text="jane@smith.com"
-  link="jane@smith.com"
+  text="E-mail"
+  link="artemnemudryi@ufl.edu"
 %}
 {%
   include button.html
   type="phone"
-  text="(555) 867-5309"
-  link="+1-555-867-5309"
+  text="(352)-294-8396"
+  link="+1-352-294-8396"
 %}
-{%
-  include button.html
-  type="address"
-  tooltip="Our location on Google Maps for easy navigation"
-  link="https://www.google.com/maps"
-%}
+
 
 {% include section.html %}
 
-{% capture col1 %}
 
-{%
-  include figure.html
-  image="images/photo.jpg"
-  caption="Lorem ipsum"
-%}
+## {% include icon.html icon="fa-regular fa-truck" %}Mailing address
 
-{% endcapture %}
+**Nemudryi lab**<br>
+1200 Newell Drive,<br>
+Academic Research Building, R3-234<br>
+Gainesville, FL 32610
 
-{% capture col2 %}
 
-{%
-  include figure.html
-  image="images/photo.jpg"
-  caption="Lorem ipsum"
-%}
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1243.1342881912303!2d-82.34467304913134!3d29.641242640555358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e8a39e46823e1d%3A0xa41e264426f835ce!2sUF%20Academic%20Research%20Building%20College%20Of%20Medicine!5e0!3m2!1sen!2sus!4v1713287564714!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<br>
 
-{% endcapture %}
 
-{% include cols.html col1=col1 col2=col2 %}
 
-{% include section.html dark=true %}
 
-{% capture col1 %}
-Lorem ipsum dolor sit amet  
-consectetur adipiscing elit  
-sed do eiusmod tempor
-{% endcapture %}
 
-{% capture col2 %}
-Lorem ipsum dolor sit amet  
-consectetur adipiscing elit  
-sed do eiusmod tempor
-{% endcapture %}
-
-{% capture col3 %}
-Lorem ipsum dolor sit amet  
-consectetur adipiscing elit  
-sed do eiusmod tempor
-{% endcapture %}
-
-{% include cols.html col1=col1 col2=col2 col3=col3 %}

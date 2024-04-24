@@ -3,8 +3,12 @@
 # team member roles
 
 pi:
-  icon: fa-solid fa-microscope
+  icon: fa-solid fa-frog
   description: Principal Investigator
+
+res-prof:
+  icon: fa-solid fa-hat-wizard
+  description: Wizard
 
 postdoc:
   icon: fa-solid fa-glasses
@@ -37,6 +41,22 @@ website:
   icon: fa-solid fa-globe
   text: Website
   tooltip: Website
+
+media:
+  icon: fa-solid fa-newspaper
+  text: Press article
+  tooltip: Press article
+
+pubmed:
+  icon: fa-solid fa-book-open
+  text: PubMed
+  tooltip: PubMed
+  link: https://www.ncbi.nlm.nih.gov/pmc/articles/$VALUE
+
+podcast:
+  icon: fa-solid fa-podcast
+  text: Podcast
+  tooltip: Podcast
 
 external:
   icon: fa-solid fa-up-right-from-square

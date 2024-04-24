@@ -6,6 +6,7 @@ $wrap: 800px;
 
 .citation-container {
   container-type: inline-size;
+
 }
 
 .citation {
@@ -14,14 +15,15 @@ $wrap: 800px;
   border-radius: var(--rounded);
   background: var(--background);
   overflow: hidden;
-  box-shadow: var(--shadow);
+  #box-shadow: var(--shadow);
+  box-shadow: none;
 }
 
 .citation-image {
   position: relative;
   width: $thumb-size;
   flex-shrink: 0;
-  // box-shadow: var(--shadow);
+  box-shadow: none;
 }
 
 .citation-image img {
@@ -68,7 +70,8 @@ $wrap: 800px;
 }
 
 .citation-publisher {
-  text-transform: capitalize;
+  text-transform: none;
+  font-style: italic;
 }
 
 .citation-description {
@@ -79,16 +82,20 @@ $wrap: 800px;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  
 }
 
 .citation-buttons .button {
   margin: 0;
+  text-align: left;
+  text-wrap: nowrap;
 }
 
 .citation-text > .tags {
   display: inline-flex;
   justify-content: flex-start;
   margin: 0;
+  text-wrap: wrap;
 }
 
 @container (max-width: #{$wrap}) {

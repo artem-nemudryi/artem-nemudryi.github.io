@@ -8,7 +8,7 @@
   --text: #000000;
   --background: #ffffff;
   --background-alt: #fafafa;
-  --light-gray: #e0e0e0;
+  --light-gray: #244677;
   --gray: #808080;
   --dark-gray: #404040;
   --overlay: #00000020;
@@ -27,15 +27,16 @@
 
 :root {
   // font families
-  --title: "Barlow", sans-serif;
-  --heading: "Barlow", sans-serif;
-  --body: "Barlow", sans-serif;
+  --title: "Roboto", sans-serif;
+  --heading: "Roboto", sans-serif;
+  --body: "Roboto", sans-serif;
   --code: "Roboto Mono", monospace;
 
   // font sizes
   --large: 1.2rem;
   --xl: 1.4rem;
   --xxl: 1.6rem;
+  --title: 3.6rem;
 
   // font weights
   --thin: 200;

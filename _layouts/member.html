@@ -2,50 +2,47 @@
 layout: default
 ---
 
-{% capture floatcontent %}
+<h1>{{ page.name | default: page.title  }}</h1>
 
-{% include portrait.html lookup=page.slug %}
+{%- include member-photo.html image=page.image -%}
+
+
+<p class="center">
+  <h4 style="text-align: center;">{%- include role.html type=page.role text=true description=page.description -%}</h4>
+</p>
+
+
 
 <div>
   {% for link in page.links %}
     {% assign key = link[0] %}
     {% assign value = link[1] %}
-    {% include button.html type=key link=value style="bare" %}<br>
+    {% include button.html type=key link=value style="bare" %}
   {% endfor %}
 </div>
 
-{% endcapture %}
-
-{% include float.html content=floatcontent %}
-
 {{ content }}
 
-{% assign aliases = page.aliases
-  | default: page.name
-  | default: page.title
-  | join: ","
-  | split: ","
-  | array_filter
-%}
+{%- assign aliases = "" | split: ',' -%}
 
-{% capture search -%}
-  research/?search={% for alias in aliases %}"{{ alias }}" {% endfor %}
-{%- endcapture %}
+{%- if page.aliases.first -%}
+  {%- assign aliases = aliases | concat: page.aliases -%}
+{%- elsif page.aliases -%}
+  {%- assign aliases = aliases | push: page.aliases -%}
+{%- elsif page.name -%}
+  {%- assign aliases = aliases | push: page.name -%}
+{%- elsif page.title -%}
+  {%- assign aliases = aliases | push: page.title -%}
+{%- endif -%}
+
+{%- assign search = aliases | join: '" "' | prepend: '"' | append: '"' | prepend: "/publications/?search=" -%}
+
+{%- capture text -%}
+  See {{ page.name | default: page.title }}'s papers on the Publications page
+{%- endcapture -%}
 
 <p class="center">
   <a href="{{ search | relative_url }}">
-    Search for {{ page.name | default: page.title }}'s papers on the Research page
+    Search for {{ page.name | default: page.title }}'s papers on the Publications page
   </a>
 </p>
-
-{% capture search -%}
-  blog/?search={{ page.name }}
-{%- endcapture %}
-
-<!--
-<p class="center">
-  <a href="{{ search | relative_url }}">
-    See {{ page.name | default: page.title }}'s posts on the Blog page
-  </a>
-</p>
--->

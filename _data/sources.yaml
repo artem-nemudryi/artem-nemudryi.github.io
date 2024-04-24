@@ -1,23 +1,57 @@
-- id: doi:10.1371/journal.pcbi.1007128
-  type: paper
-  description: Lorem ipsum _dolor_ **sit amet**, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  date: 2020-12-4
-  image: https://journals.plos.org/ploscompbiol/article/figure/image?size=inline&id=info:doi/10.1371/journal.pcbi.1007128.g001&rev=2
+- id: doi:10.1101/2023.08.29.555404
+  image: images/rna_break_and_repair_editing_v2.png
+  publisher: bioRxiv
+
+- id: doi:10.1126/sciadv.adj8277
+  image: https://www.science.org/cms/asset/511c768c-7014-4da6-98ce-58265db8e92e/sciadv.2023.9.issue-37.largecover.jpg
   buttons:
-    - type: manubot
-      link: https://greenelab.github.io/meta-review/
-    - type: source
-      text: Manuscript Source
-      link: https://github.com/greenelab/meta-review
-    - type: website
-      link: http://manubot.org/
-  tags:
-    - open science
-    - collaboration
-  repo: greenelab/meta-review
+    - type: media
+      text: CRISPR-Based Editing of RNA Viruses Developed, <em>Inside Precision Medicine</em>
+      link: https://www.insideprecisionmedicine.com/topics/precision-medicine/crispr-based-editing-of-rna-viruses-developed/
+    - type: media
+      text: RNA editing set to democratise viral engineering, <em>Chemistry World</em>
+      link: https://www.chemistryworld.com/news/this-is-just-the-beginning-rna-editing-set-to-democratise-viral-engineering/4018149.article
+    - type: podcast
+      text: Discussion on TWiV 1045 (from 34:11)
+      link: https://www.microbe.tv/twiv/twiv-1045/
 
-- id: doi:10.1016/j.csbj.2020.05.017
-  image: https://ars.els-cdn.com/content/image/1-s2.0-S2001037020302804-gr1.jpg
+- id: doi:10.3390/v14092009
+  image: https://www.mdpi.com/viruses/viruses-14-02009/article_deploy/html/images/viruses-14-02009-g001-550.jpg
 
-- id: doi:10.7554/eLife.32822
-  image: https://iiif.elifesciences.org/lax:32822%2Felife-32822-fig8-v3.tif/full/863,/0/default.webp
+
+- id: doi:10.1016/j.celrep.2021.109197
+  image: https://www.cell.com/cms/attachment/a15cff63-6055-4e7c-80b4-fc85f356acae/fx1.jpg
+  buttons:
+    - type: media 
+      text: MSU researchers publish study on coronavirus variant, <em>MSU News Service</em>
+      link: https://www.montana.edu/news/21206/msu-researchers-publish-study-on-coronavirus-variant
+
+- id: doi:10.1016/j.xcrm.2021.100319
+  image: https://ars.els-cdn.com/content/image/1-s2.0-S2666379121001622-fx1.jpg
+
+- id: doi:10.1016/j.xcrm.2020.100098
+  image: https://ars.els-cdn.com/content/image/1-s2.0-S2666379120X00073-cov200h.gif
+
+- id: doi:10.1038/s41467-022-35445-5
+  image: https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-022-35445-5/MediaObjects/41467_2022_35445_Fig3_HTML.png?as=webp
+
+- id: doi:10.1038/s41594-018-0173-y
+  image: https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41594-018-0173-y/MediaObjects/41594_2018_173_Fig3_HTML.png?as=webp
+
+- id: doi:10.1016/j.chom.2022.11.005
+  image: https://ars.els-cdn.com/content/image/1-s2.0-S1931312822005613-gr1_lrg.jpg
+
+- id: doi:10.1016/j.ymeth.2022.06.002
+  image: https://ars.els-cdn.com/content/image/1-s2.0-S1046202322001244-ga1_lrg.jpg
+
+- id: doi:10.1089/scd.2015.0204
+  remove: true
+
+- id: doi:10.1073/pnas.2216430120
+  image: /images/pnas_secor.jpg
+
+- id: 10.1093/molbev/msae061
+  style: none
+
+- id: 10.1016/j.gastha.2022.06.002
+  style: none

@@ -1,35 +1,29 @@
 ---
 ---
 
-# Lab Website Template
+# Welcome to the Nemudryi lab
 
-[Lab Website Template](https://github.com/greenelab/lab-website-template) is an easy-to-use, flexible website template for [labs](https://www.greenelab.com/).
-Spend less time worrying about managing a website and citations, and more time running your lab.
+Nemudryi lab will open doors in September of 2024 in the [Department of Biochemistry & Molecular Biology](https://biochem.med.ufl.edu) in the [College of Medicine at the University of Florida](https://med.ufl.edu).
 
-{%
-  include button.html
-  type="docs"
-  link="https://greene-lab.gitbook.io/lab-website-template-docs"
-%}
-{%
-  include button.html
-  type="github"
-  text="On GitHub"
-  link="greenelab/lab-website-template"
-%}
 
-{% include section.html %}
+**We are hiring! If you are interested in joining the lab, [get in touch](join)!**
+
+
 
 ## Highlights
 
+
 {% capture text %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+We use CRISPR-guided ribonucleases to study how human cells repair RNA and how RNA viruses co-opt these mechanisms for their own benefit.
+<br><br>
+Our goal is to understand the molecular mechanisms that govern RNA repair and translate this understanding into new RNA editing tools for applications in science and medicine.
+
 
 {%
   include button.html
   link="research"
-  text="See our publications"
+  text="Learn about our research"
   icon="fa-solid fa-arrow-right"
   flip=true
   style="bare"
@@ -39,40 +33,17 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="images/rna_editing_rna_repair.png"
   link="research"
-  title="Our Research"
+  title="Science"
   text=text
 %}
 
 {% capture text %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+We are a dynamic duo of molecular biologists, leveraging our combined expertise to study RNA repair and develop new biotechnologies.<br><br>
+Our team is growing and is excited to welcome new members!
 
-{%
-  include button.html
-  link="projects"
-  text="Browse our projects"
-  icon="fa-solid fa-arrow-right"
-  flip=true
-  style="bare"
-%}
-
-{% endcapture %}
-
-{%
-  include feature.html
-  image="images/photo.jpg"
-  link="projects"
-  title="Our Projects"
-  flip=true
-  style="bare"
-  text=text
-%}
-
-{% capture text %}
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
 {%
   include button.html
@@ -87,8 +58,13 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="images/lab_photo_coming.png"
   link="team"
-  title="Our Team"
+  title="People"
+  flip=true
+  style="bare"
   text=text
 %}
+
+
+

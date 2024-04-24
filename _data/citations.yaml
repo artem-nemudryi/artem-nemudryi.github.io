@@ -1,247 +1,278 @@
 # DO NOT EDIT, GENERATED AUTOMATICALLY
 
-- id: doi:10.1093/nar/gkad1082
-  title: "The Monarch Initiative in 2024: an analytic platform integrating phenotypes,\
-    \ genes\_and diseases across species"
+- id: doi:10.1016/j.xcrm.2021.100319
+  title: Intrinsic signal amplification by type III CRISPR-Cas systems provides a
+    sequence-specific SARS-CoV-2 diagnostic
   authors:
-  - Tim E Putman
-  - Kevin Schaper
-  - Nicolas Matentzoglu
-  - "Vincent\_P Rubinetti"
-  - "Faisal\_S Alquaddoomi"
-  - Corey Cox
-  - J Harry Caufield
-  - Glass Elsarboukh
-  - Sarah Gehrke
-  - Harshad Hegde
-  - "Justin\_T Reese"
-  - Ian Braun
-  - "Richard\_M Bruskiewich"
-  - Luca Cappelletti
-  - Seth Carbon
-  - "Anita\_R Caron"
-  - "Lauren\_E Chan"
-  - "Christopher\_G Chute"
-  - "Katherina\_G Cortes"
-  - "Vin\xEDcius De\_Souza"
-  - Tommaso Fontana
-  - "Nomi\_L Harris"
-  - "Emily\_L Hartley"
-  - Eric Hurwitz
-  - "Julius\_O B Jacobsen"
-  - Madan Krishnamurthy
-  - "Bryan\_J Laraway"
-  - "James\_A McLaughlin"
-  - "Julie\_A McMurry"
-  - "Sierra\_A T Moxon"
-  - "Kathleen\_R Mullen"
-  - "Shawn\_T O\u2019Neil"
-  - "Kent\_A Shefchek"
-  - Ray Stefancsik
-  - Sabrina Toro
-  - "Nicole\_A Vasilevsky"
-  - "Ramona\_L Walls"
-  - "Patricia\_L Whetzel"
-  - David Osumi-Sutherland
-  - Damian Smedley
-  - "Peter\_N Robinson"
-  - "Christopher\_J Mungall"
-  - "Melissa\_A Haendel"
-  - "Monica\_C Munoz-Torres"
-  publisher: Nucleic Acids Research
-  date: '2023-11-24'
-  link: https://doi.org/gs6kmr
-  orcid: 0000-0002-4655-3773
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1101/2023.10.11.560955
-  title: Integration of 168,000 samples reveals global patterns of the human gut microbiome
-  authors:
-  - Richard J. Abdill
-  - Samantha P. Graham
-  - Vincent Rubinetti
-  - Frank W. Albert
-  - Casey S. Greene
-  - Sean Davis
-  - Ran Blekhman
-  publisher: Cold Spring Harbor Laboratory
-  date: '2023-10-11'
-  link: https://doi.org/gsvf5z
-  orcid: 0000-0002-4655-3773
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1093/nar/gkad289
-  title: 'MyGeneset.info: an interactive and programmatic platform for community-curated
-    and user-created collections of genes'
-  authors:
-  - Ricardo Avila
-  - Vincent Rubinetti
-  - Xinghua Zhou
-  - Dongbo Hu
-  - Zhongchao Qian
-  - Marco Alvarado Cano
-  - Everaldo Rodolpho
-  - Ginger Tsueng
-  - Casey Greene
-  - Chunlei Wu
-  publisher: Nucleic Acids Research
-  date: '2023-04-18'
-  link: https://doi.org/gr5hb5
-  orcid: 0000-0002-4655-3773
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1101/2023.01.05.522941
-  title: Hetnet connectivity search provides rapid insights into how two biomedical
-    entities are related
-  authors:
-  - Daniel S. Himmelstein
-  - Michael Zietz
-  - Vincent Rubinetti
-  - Kyle Kloster
-  - Benjamin J. Heil
-  - Faisal Alquaddoomi
-  - Dongbo Hu
-  - David N. Nicholson
-  - Yun Hao
-  - Blair D. Sullivan
-  - Michael W. Nagle
-  - Casey S. Greene
-  publisher: Cold Spring Harbor Laboratory
-  date: '2023-01-07'
-  link: https://doi.org/grmcb9
-  orcid: 0000-0002-4655-3773
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1093/gigascience/giad047
-  title: Hetnet connectivity search provides rapid insights into how biomedical entities
-    are related
-  authors:
-  - Daniel S Himmelstein
-  - Michael Zietz
-  - Vincent Rubinetti
-  - Kyle Kloster
-  - Benjamin J Heil
-  - Faisal Alquaddoomi
-  - Dongbo Hu
-  - David N Nicholson
-  - Yun Hao
-  - Blair D Sullivan
-  - Michael W Nagle
-  - Casey S Greene
-  publisher: GigaScience
-  date: '2022-12-28'
-  link: https://doi.org/gsd85n
-  orcid: 0000-0002-4655-3773
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1101/2022.02.18.461833
-  title: 'MolEvolvR: A web-app for characterizing proteins using molecular evolution
-    and phylogeny'
-  authors:
-  - Jacob D Krol
-  - Joseph T Burke
-  - Samuel Z Chen
-  - Lo Sosinski
-  - Faisal S Alquaddoomi
-  - Evan P Brenner
-  - Ethan P Wolfe
-  - Vince P Rubinetti
-  - Shaddai Amolitos
-  - Kellen M Reason
-  - John B Johnston
-  - Janani Ravi
-  publisher: Cold Spring Harbor Laboratory
-  date: '2022-02-22'
-  link: https://doi.org/gstx7j
-  orcid: 0000-0002-4655-3773
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1186/s13059-020-02021-3
-  title: Compressing gene expression data using multiple latent space dimensionalities
-    learns complementary biological representations
-  authors:
-  - Gregory P. Way
-  - Michael Zietz
-  - Vincent Rubinetti
-  - Daniel S. Himmelstein
-  - Casey S. Greene
-  publisher: Genome Biology
-  date: '2020-05-11'
-  link: https://doi.org/gg2mjh
-  orcid: 0000-0002-4655-3773
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1371/journal.pcbi.1007128
-  title: Open collaborative writing with Manubot
-  authors:
-  - Daniel S. Himmelstein
-  - Vincent Rubinetti
-  - David R. Slochower
-  - Dongbo Hu
-  - Venkat S. Malladi
-  - Casey S. Greene
-  - Anthony Gitter
-  publisher: PLOS Computational Biology
-  date: '2020-12-04'
-  link: https://doi.org/c7np
-  orcid: 0000-0002-4655-3773
+  - Andrew Santiago-Frangos
+  - Laina N. Hall
+  - Anna Nemudraia
+  - Artem Nemudryi
+  - Pushya Krishna
+  - Tanner Wiegand
+  - Royce A. Wilkinson
+  - Deann T. Snyder
+  - Jodi F. Hedges
+  - Calvin Cicha
+  - Helen H. Lee
+  - Ava Graham
+  - Mark A. Jutila
+  - Matthew P. Taylor
+  - Blake Wiedenheft
+  publisher: Cell Reports Medicine
+  date: '2021-06-01'
+  link: https://doi.org/gpmv6n
+  orcid: 0000-0003-0121-1363
   plugin: sources.py
   file: sources.yaml
-  type: paper
-  description: Lorem ipsum _dolor_ **sit amet**, consectetur adipiscing elit, sed
-    do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  image: https://journals.plos.org/ploscompbiol/article/figure/image?size=inline&id=info:doi/10.1371/journal.pcbi.1007128.g001&rev=2
+  image: https://ars.els-cdn.com/content/image/1-s2.0-S2666379121001622-fx1.jpg
+- id: doi:10.1016/j.celrep.2021.109197
+  title: SARS-CoV-2 genomic surveillance identifies naturally occurring truncation
+    of ORF7a that limits immune suppression
+  authors:
+  - Artem Nemudryi
+  - Anna Nemudraia
+  - Tanner Wiegand
+  - Joseph Nichols
+  - Deann T. Snyder
+  - Jodi F. Hedges
+  - Calvin Cicha
+  - Helen Lee
+  - Karl K. Vanderwood
+  - Diane Bimczok
+  - Mark A. Jutila
+  - Blake Wiedenheft
+  publisher: Cell Reports
+  date: '2021-06-01'
+  link: https://doi.org/gtp3ps
+  orcid: 0000-0003-0121-1363
+  plugin: sources.py
+  file: sources.yaml
+  image: https://www.cell.com/cms/attachment/a15cff63-6055-4e7c-80b4-fc85f356acae/fx1.jpg
   buttons:
-  - type: manubot
-    link: https://greenelab.github.io/meta-review/
-  - type: source
-    text: Manuscript Source
-    link: https://github.com/greenelab/meta-review
-  - type: website
-    link: http://manubot.org/
-  tags:
-  - open science
-  - collaboration
-  repo: greenelab/meta-review
-- id: doi:10.1101/573782
-  title: Sequential compression of gene expression across dimensionalities and methods
-    reveals no single best method or dimensionality
+  - type: media
+    text: MSU researchers publish study on coronavirus variant, <em>MSU News Service</em>
+    link: https://www.montana.edu/news/21206/msu-researchers-publish-study-on-coronavirus-variant
+- id: doi:10.1016/j.xcrm.2020.100098
+  title: Temporal Detection and Phylogenetic Assessment of SARS-CoV-2 in Municipal
+    Wastewater
   authors:
-  - Gregory P. Way
-  - Michael Zietz
-  - Vincent Rubinetti
-  - Daniel S. Himmelstein
-  - Casey S. Greene
-  publisher: Cold Spring Harbor Laboratory
-  date: '2019-03-11'
-  link: https://doi.org/gfxjxf
-  orcid: 0000-0002-4655-3773
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1016/j.csbj.2020.05.017
-  title: Constructing knowledge graphs and their biomedical applications
-  authors:
-  - David N. Nicholson
-  - Casey S. Greene
-  publisher: Computational and Structural Biotechnology Journal
-  date: '2020-01-01'
-  link: https://doi.org/gg7m48
-  image: https://ars.els-cdn.com/content/image/1-s2.0-S2001037020302804-gr1.jpg
+  - Artem Nemudryi
+  - Anna Nemudraia
+  - Tanner Wiegand
+  - Kevin Surya
+  - Murat Buyukyoruk
+  - Calvin Cicha
+  - Karl K. Vanderwood
+  - Royce Wilkinson
+  - Blake Wiedenheft
+  publisher: Cell Reports Medicine
+  date: '2020-09-01'
+  link: https://doi.org/gk7t6r
+  orcid: 0000-0003-0121-1363
   plugin: sources.py
   file: sources.yaml
-- id: doi:10.7554/eLife.32822
-  title: Sci-Hub provides access to nearly all scholarly literature
+  image: https://ars.els-cdn.com/content/image/1-s2.0-S2666379120X00073-cov200h.gif
+- id: doi:10.1038/s41594-018-0173-y
+  title: CRISPR RNA-guided autonomous delivery of Cas9
   authors:
-  - Daniel S Himmelstein
-  - Ariel Rodriguez Romero
-  - Jacob G Levernier
-  - Thomas Anthony Munro
-  - Stephen Reid McLaughlin
-  - Bastian Greshake Tzovaras
-  - Casey S Greene
-  publisher: eLife
-  date: '2018-03-01'
-  link: https://doi.org/ckcj
-  image: https://iiif.elifesciences.org/lax:32822%2Felife-32822-fig8-v3.tif/full/863,/0/default.webp
+  - Royce A. Wilkinson
+  - Coleman Martin
+  - Artem A. Nemudryi
+  - Blake Wiedenheft
+  publisher: Nature Structural &amp; Molecular Biology
+  date: '2018-12-31'
+  link: https://doi.org/gfsq43
+  orcid: 0000-0003-0121-1363
+  plugin: sources.py
+  file: sources.yaml
+  image: https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41594-018-0173-y/MediaObjects/41594_2018_173_Fig3_HTML.png?as=webp
+- id: doi:10.1101/2023.08.29.555404
+  title: Repair of CRISPR-guided RNA breaks enables site-specific RNA editing in human
+    cells
+  authors:
+  - Anna Nemudraia
+  - Artem Nemudryi
+  - Blake Wiedenheft
+  publisher: bioRxiv
+  date: '2023-08-29'
+  link: https://doi.org/gtp3p2
+  image: images/rna_break_and_repair_editing_v2.png
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1126/sciadv.adj8277
+  title: CRISPR-based engineering of RNA viruses
+  authors:
+  - Artem Nemudryi
+  - Anna Nemudraia
+  - Joseph E. Nichols
+  - Andrew M. Scherffius
+  - Trevor Zahl
+  - Blake Wiedenheft
+  publisher: Science Advances
+  date: '2023-09-15'
+  link: https://doi.org/gsszsv
+  image: https://www.science.org/cms/asset/511c768c-7014-4da6-98ce-58265db8e92e/sciadv.2023.9.issue-37.largecover.jpg
+  buttons:
+  - type: media
+    text: CRISPR-Based Editing of RNA Viruses Developed, <em>Inside Precision Medicine</em>
+    link: https://www.insideprecisionmedicine.com/topics/precision-medicine/crispr-based-editing-of-rna-viruses-developed/
+  - type: media
+    text: RNA editing set to democratise viral engineering, <em>Chemistry World</em>
+    link: https://www.chemistryworld.com/news/this-is-just-the-beginning-rna-editing-set-to-democratise-viral-engineering/4018149.article
+  - type: podcast
+    text: Discussion on TWiV 1045 (from 34:11)
+    link: https://www.microbe.tv/twiv/twiv-1045/
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.3390/v14092009
+  title: The Rise and Fall of SARS-CoV-2 Variants and Ongoing Diversification of Omicron
+  authors:
+  - Tanner Wiegand
+  - Artem Nemudryi
+  - Anna Nemudraia
+  - Aidan McVey
+  - Agusta Little
+  - David N. Taylor
+  - Seth T. Walk
+  - Blake Wiedenheft
+  publisher: Viruses
+  date: '2022-09-10'
+  link: https://doi.org/gtrsmv
+  image: https://www.mdpi.com/viruses/viruses-14-02009/article_deploy/html/images/viruses-14-02009-g001-550.jpg
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1038/s41467-022-35445-5
+  title: Sequence-specific capture and concentration of viral RNA by type III CRISPR
+    system enhances diagnostic
+  authors:
+  - Anna Nemudraia
+  - Artem Nemudryi
+  - Murat Buyukyoruk
+  - Andrew M. Scherffius
+  - Trevor Zahl
+  - Tanner Wiegand
+  - Shishir Pandey
+  - Joseph E. Nichols
+  - Laina N. Hall
+  - Aidan McVey
+  - Helen H. Lee
+  - Royce A. Wilkinson
+  - Laura R. Snyder
+  - Joshua D. Jones
+  - Kristin S. Koutmou
+  - Andrew Santiago-Frangos
+  - Blake Wiedenheft
+  publisher: Nature Communications
+  date: '2022-12-15'
+  link: https://doi.org/gtp3pw
+  image: https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-022-35445-5/MediaObjects/41467_2022_35445_Fig3_HTML.png?as=webp
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1016/j.chom.2022.11.005
+  title: "A viral \u201Ccodebreaker\u201D intercepts a host alarm"
+  authors:
+  - Artem Nemudryi
+  - Anna Nemudraia
+  - Tanner Wiegand
+  - Samuel H. Sternberg
+  - Blake Wiedenheft
+  publisher: Cell Host &amp; Microbe
+  date: '2022-12-01'
+  link: https://doi.org/gtp3px
+  image: https://ars.els-cdn.com/content/image/1-s2.0-S1931312822005613-gr1_lrg.jpg
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1016/j.ymeth.2022.06.002
+  title: CRISPR-Cas, Argonaute proteins and the emerging landscape of amplification-free
+    diagnostics
+  authors:
+  - Andrew Santiago-Frangos
+  - Artem Nemudryi
+  - Anna Nemudraia
+  - Tanner Wiegand
+  - Joseph E. Nichols
+  - Pushya Krishna
+  - Andrew M. Scherffius
+  - Trevor R. Zahl
+  - Royce A. Wilkinson
+  - Blake Wiedenheft
+  publisher: Methods
+  date: '2022-09-01'
+  link: https://doi.org/gtp3pz
+  image: https://ars.els-cdn.com/content/image/1-s2.0-S1046202322001244-ga1_lrg.jpg
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1073/pnas.2216430120
+  title: Polyamines and linear DNA mediate bacterial threat assessment of bacteriophage
+    infection
+  authors:
+  - Camilla D. de Mattos
+  - Dominick R. Faith
+  - Artem A. Nemudryi
+  - Amelia K. Schmidt
+  - DeAnna C. Bublitz
+  - Lauren Hammond
+  - Margie A. Kinnersley
+  - Caleb M. Schwartzkopf
+  - Autumn J. Robinson
+  - Alex Joyce
+  - Lia A. Michaels
+  - Robert S. Brzozowski
+  - Alison Coluccio
+  - Denghui David Xing
+  - Jumpei Uchiyama
+  - Laura K. Jennings
+  - Prahathees Eswara
+  - Blake Wiedenheft
+  - Patrick R. Secor
+  publisher: Proceedings of the National Academy of Sciences
+  date: '2023-02-21'
+  link: https://doi.org/grt99s
+  image: /images/pnas_secor.jpg
+  plugin: sources.py
+  file: sources.yaml
+- id: 10.1093/molbev/msae061
+  title: The Diverse Evolutionary Histories of Domesticated Metaviral Capsid Genes
+    in Mammals
+  authors:
+  - William S Henriques
+  - Janet M Young
+  - Artem Nemudryi
+  - Anna Nemudraia
+  - Blake Wiedenheft
+  - Harmit S Malik
+  publisher: Molecular Biology and Evolution
+  date: '2024-03-20'
+  link: https://doi.org/gtrsmt
+  style: none
+  plugin: sources.py
+  file: sources.yaml
+- id: 10.1016/j.gastha.2022.06.002
+  title: Severe Acute Respiratory Syndrome Coronavirus 2 Is Detected in the Gastrointestinal
+    Tract of Asymptomatic Endoscopy Patients but Is Unlikely to Pose a Significant
+    Risk to Healthcare Personnel
+  authors:
+  - Michelle D. Cherne
+  - Andrew B. Gentry
+  - Anna Nemudraia
+  - Artem Nemudryi
+  - Jodi F. Hedges
+  - Heather Walk
+  - Karlin Blackwell
+  - Deann T. Snyder
+  - Maria Jerome
+  - Wyatt Madden
+  - Marziah Hashimi
+  - T. Andrew Sebrell
+  - David B. King
+  - Raina K. Plowright
+  - Mark A. Jutila
+  - Blake Wiedenheft
+  - Diane Bimczok
+  publisher: Gastro Hep Advances
+  date: '2022-01-01'
+  link: https://doi.org/gtrsmw
+  style: none
   plugin: sources.py
   file: sources.yaml
