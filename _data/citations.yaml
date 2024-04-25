@@ -73,6 +73,10 @@
   plugin: sources.py
   file: sources.yaml
   image: https://ars.els-cdn.com/content/image/1-s2.0-S2666379120X00073-cov200h.gif
+  buttons:
+  - type: media
+    text: Sewers Are Now a COVID-19 Early-Warning System, <em>The Atlantic</em>
+    link: https://www-stage.theatlantic.com/health/archive/2020/09/tracking-coronavirus-through-sewage/615958/
 - id: doi:10.1038/s41594-018-0173-y
   title: CRISPR RNA-guided autonomous delivery of Cas9
   authors:
