@@ -31,6 +31,11 @@
 
 - id: doi:10.1016/j.xcrm.2020.100098
   image: https://ars.els-cdn.com/content/image/1-s2.0-S2666379120X00073-cov200h.gif
+  buttons:
+    - type: media 
+      text: Sewers Are Now a COVID-19 Early-Warning System, <em>The Atlantic</em>
+      link: https://www-stage.theatlantic.com/health/archive/2020/09/tracking-coronavirus-through-sewage/615958/
+  
 
 - id: doi:10.1038/s41467-022-35445-5
   image: https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-022-35445-5/MediaObjects/41467_2022_35445_Fig3_HTML.png?as=webp
