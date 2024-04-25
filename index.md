@@ -3,7 +3,7 @@
 
 # Welcome to the Nemudryi lab
 
-Nemudryi lab will open doors in September of 2024 in the [Department of Biochemistry & Molecular Biology](https://biochem.med.ufl.edu) in the [College of Medicine at the University of Florida](https://med.ufl.edu).
+Nemudryi lab will open doors in September of 2024 in the [Department of Biochemistry & Molecular Biology](https://biochem.med.ufl.edu) at the [University of Florida, College of Medicine](https://med.ufl.edu).
 
 
 **We are hiring! If you are interested in joining the lab, [get in touch](join)!**
