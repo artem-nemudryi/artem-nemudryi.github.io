@@ -1,4 +1,4 @@
-Visit **[artem-nemudryi.github.io](https://artem-nemudryi.github.io)** 🚀
+Visit **[nemudryi-lab.com](https://nemudryi-lab.com)** 🚀
 
 <h1 align="center">Nemudryi Lab Website</h1>
 <p align="center">
