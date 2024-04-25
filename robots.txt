@@ -1,1 +1,1 @@
-Sitemap: https://artem-nemudryi.github.io/sitemap.xml
+Sitemap: https://nemudryi-lab.com/sitemap.xml
