@@ -116,7 +116,7 @@ header[data-big] {
 }
 header[data-big] .home {
   flex-direction: row;
-  flex-grow: 0;
+  flex-grow: 1;
 }
 header[data-big] .title-text {
   flex-direction: column;
