@@ -1,6 +1,6 @@
 ---
 name: Artem Nemudryi, PhD
-image: member_headshots/artem_nemudryi_v2.jpg
+image: member_headshots/artem_nemudryi_v2.tif
 role: pi
 aliases:
   - Artem Nemudryi
