@@ -35,6 +35,7 @@ header a {
   min-width: 0;
   font-family: var(--title);
   text-align: center;
+  text-wrap: wrap;
 }
 
 .title {
