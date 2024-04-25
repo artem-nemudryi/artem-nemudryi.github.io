@@ -42,7 +42,7 @@ Our understanding of mechanisms that cells use to cope with RNA damage is limite
 **Recombinant RNA technologies** <br>
 We have combined sequence-specific RNA cleavage by CRISPR ribonucleases with programmable RNA repair to make precise deletions and insertions in RNA. This *in vitro* recombinant RNA technology enables rapid and facile engineering of RNA viruses, and we use this approach to dissect the effect of recurring mutations in viral genomes on viral phenotypes.
 
-{% include citation.html lookup="CRISPR-based engineering of RNA viruses" style="rich" %}
+{% include citation.html lookup="10.1126/science.adk5518" style="rich" %}
 
 
 ## <br>
