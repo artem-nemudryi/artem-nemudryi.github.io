@@ -80,7 +80,7 @@
 .citation-buttons .button {
   margin: 0;
   text-align: left;
-  text-wrap: nowrap;
+  text-wrap: wrap;
 }
 
 .citation-text > .tags {
