@@ -48,7 +48,6 @@ header a {
   min-width: 0;
   font-family: var(--title);
   text-align: center;
-  text-wrap: wrap;
 }
 
 .title {
@@ -147,7 +146,7 @@ header[data-big] {
     flex-direction: column;
     align-items: start;
     text-align: left;
-    text-wrap: nowrap;
+    text-wrap: wrap;
     margin-top: 200px;
     
   }
@@ -160,5 +159,6 @@ header[data-big] {
 
   .subtitle {
     font-size: 2rem;
+    text-wrap: wrap;
   }
 }
