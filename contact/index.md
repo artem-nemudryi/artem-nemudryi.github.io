@@ -13,7 +13,7 @@ The lab is located in the [Department of Biochemistry & Molecular Biology](https
 
 {%
   include figure.html
-  image="images/2021-04-20_Campus-Photos-5.jpg"
+  image="images/2021-04-20_Campus-Photos-5_2K.jpg"
   caption="Image courtesy of UF Photography"
 %}
 
