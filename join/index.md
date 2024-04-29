@@ -16,7 +16,7 @@ nav:
 
 {%
   include figure.html
-  image="images/2020-10-12_gator_L9A9095.jpg"
+  image="images/2020-10-12_gator_L9A9095_2K.jpg"
   caption="Image courtesy of UF Photography"
 %}
 
