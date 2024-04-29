@@ -49,7 +49,7 @@ We have combined sequence-specific RNA cleavage by CRISPR ribonucleases with pro
 
 **Mechanisms of viral RNA replication**
 
-The paradigm "*Why repair RNA if you can re-synthesize it*" does not work in the case of RNA viruses because RNA is all they have. We are interested in mechanisms that RNA viruses have evolved to maintain the integrity of their genomes, counteract innate immunity, and promote viral replication.
+The paradigm "*Why repair RNA if you can re-synthesize it?*" does not work in the case of RNA viruses because RNA is all they have. We are interested in mechanisms that RNA viruses have evolved to maintain the integrity of their genomes, counteract innate immunity, and promote viral replication.
 
 
 {% include citation.html lookup="SARS-CoV-2 genomic surveillance identifies naturally occurring truncation of ORF7a that limits immune suppression" style="rich" %}
