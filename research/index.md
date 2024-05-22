@@ -36,7 +36,7 @@ We challenge this paradigm and ask:<br>
 **Human RNA repair** <br>
 Our understanding of mechanisms that cells use to cope with RNA damage is limited, in part due to the lack of tools to damage RNA without confounding effects on DNA. We have used type III-A CRISPR complexes to make programmable RNA breaks in human transcripts and demonstrated that RNA breaks are repaired in human cells. We leverage this process for programmable RNA excisions to develop applications for treating genetic diseases.
 
-{% include citation.html lookup="Repair of CRISPR-guided RNA breaks enables site-specific RNA excision in human cells" style="rich" %}
+{% include citation.html lookup="10.1126/science.adk5518" style="rich" %}
 
 <hr>
 **Recombinant RNA technologies** <br>
