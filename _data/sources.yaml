@@ -1,5 +1,9 @@
 - id: doi:10.1126/science.adk5518
   image: https://www.science.org/cms/10.1126/science.adk5518/asset/aeaafbdb-8044-46ac-a2ce-883732b65a5a/assets/images/large/science.adk5518-f5.jpg
+  buttons:
+    - type: video
+      text: Genome Engineering Seminar Series, Harvard Medical School
+      link: https://harvard.zoom.us/rec/share/tW3rf2DicOHHGOxrN-KJAa7WhR72y--stX6fsl91yIOjBuUWF-RtYlVPjf40YI34.-NpLqh6eJZwlwhE4
 
 
 - id: doi:10.1101/2023.08.29.555404
