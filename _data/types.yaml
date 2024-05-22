@@ -58,6 +58,11 @@ podcast:
   text: Podcast
   tooltip: Podcast
 
+video:
+  icon: fa-solid fa-video
+  text: Video
+  tooltip: Video
+
 external:
   icon: fa-solid fa-up-right-from-square
   text: External Link
