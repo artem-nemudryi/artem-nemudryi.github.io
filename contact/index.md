@@ -38,7 +38,7 @@ The lab is located in the [Department of Biochemistry & Molecular Biology](https
 
 **Nemudryi lab**<br>
 1200 Newell Drive,<br>
-Academic Research Building, R3-234<br>
+Academic Research Building, R3-285<br>
 Gainesville, FL 32610
 
 
