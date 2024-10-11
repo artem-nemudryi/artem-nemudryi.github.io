@@ -3,7 +3,7 @@
 
 # Welcome to the Nemudryi lab
 
-Nemudryi lab will open doors in September of 2024 in the [Department of Biochemistry & Molecular Biology](https://biochem.med.ufl.edu) at the [UF College of Medicine](https://med.ufl.edu).
+Nemudryi lab has opened doors in September of 2024 in the [Department of Biochemistry & Molecular Biology](https://biochem.med.ufl.edu) at the [UF College of Medicine](https://med.ufl.edu).
 
 
 **We are growing! If you are interested in joining the lab, [get in touch](join)!**
@@ -41,8 +41,8 @@ Our goal is to understand the molecular mechanisms that govern RNA repair and tr
 
 {% capture text %}
 
-We are molecular biologists studying RNA repair and developing new biotechnologies.<br><br>
-Our team is growing and is excited to welcome new members!
+ We are a young, ambitious, and fast-paced group studying RNA repair and developing new biotechnologies.<br><br>
+ We are passionate about science and seek like-minded individuals. Contact us if you are interested in joining!
 
 
 {%
@@ -58,7 +58,7 @@ Our team is growing and is excited to welcome new members!
 
 {%
   include feature.html
-  image="images/lab_photo_coming.png"
+  image="images/artem_and_anna.jpg"
   link="team"
   title="People"
   flip=true
