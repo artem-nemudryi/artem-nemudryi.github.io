@@ -106,6 +106,9 @@
   - type: video
     text: Genome Engineering Seminar Series, Harvard Medical School
     link: https://harvard.zoom.us/rec/share/tW3rf2DicOHHGOxrN-KJAa7WhR72y--stX6fsl91yIOjBuUWF-RtYlVPjf40YI34.-NpLqh6eJZwlwhE4
+  - type: media
+    text: A CRISPR Tool for Tinkering with the Human Transcriptome, <em>The Scientist</em>
+    link: https://www.the-scientist.com/a-crispr-tool-for-tinkering-with-the-human-transcriptome-72019
   plugin: sources.py
   file: sources.yaml
 - id: doi:10.1101/2023.08.29.555404
