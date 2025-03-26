@@ -11,8 +11,6 @@ on:
 # variables
 env:
   PREVIEWS_FOLDER: preview
-  RUBY_VERSION: 3.1.4 # Specify a specific patch version
-  BUNDLE_PATH: vendor/bundle
 
 permissions:
   contents: write
@@ -22,74 +20,33 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # for debugging
-      - uses: crazy-max/ghaction-dump-context@v2
+      - name: Debug dump
+        uses: crazy-max/ghaction-dump-context@v2
 
       - name: Checkout branch contents
         uses: actions/checkout@v4
 
-      - name: Install dependencies
-        run: |
-          sudo apt-get update -y
-          sudo apt-get install -y --no-install-recommends \
-            build-essential \
-            libssl-dev \
-            zlib1g-dev \
-            libreadline-dev \
-            git
-
-      - name: Install ruby-build
-        run: |
-          git clone https://github.com/rbenv/ruby-build.git ~/.ruby-build
-
-      - name: Add ruby-build to PATH
-        run: echo "$HOME/.ruby-build/bin" >> $GITHUB_PATH
-
-      - name: Install Ruby
-        run: |
-          ruby_version="${{ env.RUBY_VERSION }}"
-          ruby-build "$ruby_version" /opt/hostedtoolcache/Ruby/"$ruby_version"/x64
-          touch /opt/hostedtoolcache/Ruby/"$ruby_version"/x64.complete
-
-      - name: Set up Ruby environment
-        run: |
-          echo "/opt/hostedtoolcache/Ruby/${{ env.RUBY_VERSION }}/x64/bin" >> $GITHUB_PATH
-          export PATH="/opt/hostedtoolcache/Ruby/${{ env.RUBY_VERSION }}/x64/bin:$PATH"
-          gem install bundler
-
-      - name: Set up Bundler cache
-        id: bundle-cache
-        uses: actions/cache@v3
+      - name: Install Ruby packages
+        uses: ruby/setup-ruby@v1
         with:
-          path: ${{ env.BUNDLE_PATH }}
-          key: ${{ runner.os }}-gems-${{ hashFiles('Gemfile') }}
-          restore-keys: |
-            ${{ runner.os }}-gems-
-
-      - name: Install Ruby gems
-        if: steps.bundle-cache.outputs.cache-hit != 'true'
-        run: |
-          export PATH="/opt/hostedtoolcache/Ruby/${{ env.RUBY_VERSION }}/x64/bin:$PATH"
-          bundle config set --local path "${{ env.BUNDLE_PATH }}"
-          bundle install --jobs 4 --retry 3
+          ruby-version: "3.1"
+          bundler-cache: true
 
       - name: Get Pages url
         id: pages
         uses: actions/configure-pages@v4
 
-      # for debugging
-      - if: runner.debug == '1'
+      - name: SSH debug
+        if: runner.debug == '1'
         uses: mxschmitt/action-tmate@v3
 
       - name: Set root url
         run: |
-          export PATH="/opt/hostedtoolcache/Ruby/${{ env.RUBY_VERSION }}/x64/bin:$PATH"
           printf "\n\nurl: ${{ steps.pages.outputs.origin }}" >> _config.yaml
 
       - name: Build live version of site
         run: |
-          export PATH="/opt/hostedtoolcache/Ruby/${{ env.RUBY_VERSION }}/x64/bin:$PATH"
-          bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path || '' }}"
+          JEKYLL_ENV=production bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path || '' }}"
 
       - name: Commit live site to Pages branch
         uses: JamesIves/github-pages-deploy-action@v4.5.0
