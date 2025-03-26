@@ -70,7 +70,18 @@ jobs:
         run: |
           export PATH="/opt/hostedtoolcache/Ruby/${{ env.RUBY_VERSION }}/x64/bin:$PATH"
           bundle config set --local path 'vendor/bundle'
-          bundle install --jobs 4 --retry 3 --binstubs
+          bundle install --jobs 4 --retry 3 --binstubs ./bin
+
+      - name: Verify Jekyll executable
+        run: |
+          echo "Current PATH: $PATH"
+          ls -l ./bin/jekyll
+          if [ -x "./bin/jekyll" ]; then
+            echo "jekyll executable found in ./bin and is executable."
+          else
+            echo "jekyll executable NOT found or is not executable in ./bin."
+            exit 1
+          fi
 
       - name: Get Pages url
         id: pages
@@ -82,12 +93,12 @@ jobs:
 
       - name: Set root url
         run: |
-          export PATH="/opt/hostedtoolcache/Ruby/${{ env.RUBY_VERSION }}/x64/bin:$PATH"
+          export PATH="/opt/hostedtoolcache/Ruby/${{ env.RUBY_VERSION }}/x64/bin:$PATH:./bin"
           printf "\n\nurl: ${{ steps.pages.outputs.origin }}" >> _config.yaml
 
       - name: Build live version of site
         run: |
-          export PATH="/opt/hostedtoolcache/Ruby/${{ env.RUBY_VERSION }}/x64/bin:$PATH"
+          export PATH="/opt/hostedtoolcache/Ruby/${{ env.RUBY_VERSION }}/x64/bin:$PATH:./bin"
           bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path || '' }}"
 
       - name: Commit live site to Pages branch
