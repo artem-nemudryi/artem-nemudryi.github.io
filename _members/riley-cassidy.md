@@ -15,7 +15,9 @@ links:
   #linkedin: 
   
 ---
-[UF College of Medicine University Scholar](https://universityscholars.med.ufl.edu/)<br>
+<p align="center">
+  [UF College of Medicine University Scholar](https://universityscholars.med.ufl.edu/)<br>
+</p>
 
 I am from South Florida and currently on a Pre-Med track, majoring in Microbiology with a minor in Health Sciences. I am particularly interested in the study of viral and cellular development. The complexities of various organisms’ developmental patterns have fueled my passion for scientific research, pushing me to learn more. On campus, I am involved in organizations like Friends for Life and Community Health Service Corps. Off campus, I volunteer at the Ronald McDonald House. In my free time I enjoy reading, sewing, and the sunshine.
 
