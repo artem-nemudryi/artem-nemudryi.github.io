@@ -53,6 +53,8 @@ jobs:
       - name: Set up Ruby environment
         run: |
           echo "/opt/hostedtoolcache/Ruby/${{ env.RUBY_VERSION }}/x64/bin" >> $GITHUB_PATH
+          # Ensure we are using the installed Ruby's gem command
+          export PATH="/opt/hostedtoolcache/Ruby/${{ env.RUBY_VERSION }}/x64/bin:$PATH"
           gem install bundler
 
       - name: Set up Bundler cache
@@ -66,7 +68,10 @@ jobs:
 
       - name: Install Ruby gems
         if: steps.bundle-cache.outputs.cache-hit != 'true'
-        run: bundle install --jobs 4 --retry 3 --path vendor/bundle
+        run: |
+          export PATH="/opt/hostedtoolcache/Ruby/${{ env.RUBY_VERSION }}/x64/bin:$PATH"
+          bundle config set --local path 'vendor/bundle'
+          bundle install --jobs 4 --retry 3
 
       - name: Get Pages url
         id: pages
@@ -82,6 +87,7 @@ jobs:
 
       - name: Build live version of site
         run: |
+          export PATH="/opt/hostedtoolcache/Ruby/${{ env.RUBY_VERSION }}/x64/bin:$PATH"
           JEKYLL_ENV=production bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path || '' }}"
 
       - name: Commit live site to Pages branch
