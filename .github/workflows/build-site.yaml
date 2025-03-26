@@ -69,6 +69,8 @@ jobs:
         if: steps.bundle-cache.outputs.cache-hit != 'true'
         run: |
           export PATH="/opt/hostedtoolcache/Ruby/${{ env.RUBY_VERSION }}/x64/bin:$PATH"
+          gem update --system
+          gem install bundler -v "$(cat Gemfile.lock | grep -E 'BUNDLED WITH' | awk '{print $3}')" || gem install bundler
           bundle config set --local path 'vendor/bundle'
           bundle install --jobs 4 --retry 3 --binstubs ./bin
 
