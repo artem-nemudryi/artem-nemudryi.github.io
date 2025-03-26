@@ -3,25 +3,29 @@
 # team member roles
 
 pi:
-  icon: fa-solid fa-frog
+  icon: fa-solid fa-chart-simple
   description: Principal Investigator
 
 res-prof:
   icon: fa-solid fa-hat-wizard
-  description: Wizard
+  description: Research Assistant Professor
 
 postdoc:
   icon: fa-solid fa-glasses
   description: Postdoctoral Researcher
 
 phd:
-  icon: fa-solid fa-graduation-cap
+  icon: fa-solid fa-lightbulb
   description: PhD Student
 
-undergrad:
-  icon: fa-solid fa-user-graduate
-  description: Undergraduate Student
+rotation-phd:
+  icon: fa-solid fa-lightbulb
+  description: Rotation PhD Student
 
+undergrad:
+  icon: fa-solid fa-seedling
+  description: Undergraduate Student
+  
 programmer:
   icon: fa-solid fa-code
   description: Programmer
