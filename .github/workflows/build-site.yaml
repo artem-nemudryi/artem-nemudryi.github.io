@@ -13,7 +13,6 @@ env:
   PREVIEWS_FOLDER: preview
   RUBY_VERSION: 3.1.4 # Specify a specific patch version
   BUNDLE_PATH: vendor/bundle
-  BUNDLE_BIN: bin
 
 permissions:
   contents: write
@@ -72,19 +71,7 @@ jobs:
         run: |
           export PATH="/opt/hostedtoolcache/Ruby/${{ env.RUBY_VERSION }}/x64/bin:$PATH"
           bundle config set --local path "${{ env.BUNDLE_PATH }}"
-          bundle config set --local bin "${{ env.BUNDLE_BIN }}"
           bundle install --jobs 4 --retry 3
-
-      - name: Verify Jekyll executable
-        run: |
-          echo "Current PATH: $PATH"
-          ls -l ./${{ env.BUNDLE_BIN }}/jekyll
-          if [ -x "./${{ env.BUNDLE_BIN }}/jekyll" ]; then
-            echo "jekyll executable found in ./${{ env.BUNDLE_BIN }} and is executable."
-          else
-            echo "jekyll executable NOT found or is not executable in ./${{ env.BUNDLE_BIN }}."
-            exit 1
-          fi
 
       - name: Get Pages url
         id: pages
@@ -96,12 +83,12 @@ jobs:
 
       - name: Set root url
         run: |
-          export PATH="/opt/hostedtoolcache/Ruby/${{ env.RUBY_VERSION }}/x64/bin:$PATH:./${{ env.BUNDLE_BIN }}"
+          export PATH="/opt/hostedtoolcache/Ruby/${{ env.RUBY_VERSION }}/x64/bin:$PATH"
           printf "\n\nurl: ${{ steps.pages.outputs.origin }}" >> _config.yaml
 
       - name: Build live version of site
         run: |
-          export PATH="/opt/hostedtoolcache/Ruby/${{ env.RUBY_VERSION }}/x64/bin:$PATH:./${{ env.BUNDLE_BIN }}"
+          export PATH="/opt/hostedtoolcache/Ruby/${{ env.RUBY_VERSION }}/x64/bin:$PATH"
           bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path || '' }}"
 
       - name: Commit live site to Pages branch
