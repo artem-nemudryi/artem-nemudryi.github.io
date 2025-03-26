@@ -35,13 +35,14 @@ jobs:
             libssl-dev \
             zlib1g-dev \
             libreadline-dev \
-            git # git is required for ruby-build
+            git
 
       - name: Install ruby-build
         run: |
           git clone https://github.com/rbenv/ruby-build.git ~/.ruby-build
-          echo 'export PATH="$HOME/.ruby-build/bin:$PATH"' >> ~/.bashrc
-          source ~/.bashrc
+
+      - name: Add ruby-build to PATH
+        run: echo "$HOME/.ruby-build/bin" >> $GITHUB_PATH
 
       - name: Install Ruby
         run: |
