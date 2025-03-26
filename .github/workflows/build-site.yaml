@@ -11,6 +11,7 @@ on:
 # variables
 env:
   PREVIEWS_FOLDER: preview
+  RUBY_VERSION: 3.1.4 # Specify a specific patch version
 
 permissions:
   contents: write
@@ -26,11 +27,38 @@ jobs:
       - name: Checkout branch contents
         uses: actions/checkout@v4
 
-      - name: Install Ruby packages
-        uses: ruby/setup-ruby@v1.172.0
+      - name: Install dependencies
+        run: |
+          sudo apt-get update -y
+          sudo apt-get install -y --no-install-recommends \
+            build-essential \
+            libssl-dev \
+            zlib1g-dev \
+            libreadline-dev
+
+      - name: Install Ruby
+        run: |
+          ruby_version="${{ env.RUBY_VERSION }}"
+          ruby-build "$ruby_version" /opt/hostedtoolcache/Ruby/"$ruby_version"/x64
+          touch /opt/hostedtoolcache/Ruby/"$ruby_version"/x64.complete
+
+      - name: Set up Ruby environment
+        run: |
+          echo "/opt/hostedtoolcache/Ruby/${{ env.RUBY_VERSION }}/x64/bin" >> $GITHUB_PATH
+          gem install bundler
+
+      - name: Set up Bundler cache
+        id: bundle-cache
+        uses: actions/cache@v3
         with:
-          ruby-version: "3.1"
-          bundler-cache: true
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('Gemfile') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+
+      - name: Install Ruby gems
+        if: steps.bundle-cache.outputs.cache-hit != 'true'
+        run: bundle install --jobs 4 --retry 3 --path vendor/bundle
 
       - name: Get Pages url
         id: pages
