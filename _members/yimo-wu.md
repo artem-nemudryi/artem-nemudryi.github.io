@@ -1,7 +1,7 @@
 ---
 name: Yimo Wu
 image: member_headshots/yimo_wu_v2.jpeg
-role: undergrad
+role: undergrad_usp
 aliases:
   - Yimo Wu
   - Wu Y.
