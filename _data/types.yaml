@@ -3,7 +3,7 @@
 # team member roles
 
 pi:
-  icon: fa-solid fa-chart-simple
+  #icon: fa-solid fa-chart-simple
   description: Principal Investigator
 
 res-prof:
@@ -11,20 +11,24 @@ res-prof:
   description: Research Assistant Professor
 
 postdoc:
-  icon: fa-solid fa-glasses
+  #icon: fa-solid fa-glasses
   description: Postdoctoral Researcher
 
 phd:
-  icon: fa-solid fa-lightbulb
+  #icon: fa-solid fa-lightbulb
   description: PhD Student
 
 rotation-phd:
-  icon: fa-solid fa-lightbulb
+  #icon: fa-solid fa-lightbulb
   description: Rotation PhD Student
 
 undergrad:
-  icon: fa-solid fa-seedling
+  #icon: fa-solid fa-seedling
   description: Undergraduate Student
+
+undergrad_usp:
+  #icon: fa-solid fa-seedling
+  description: Undergraduate Student,<br>COM University Scholar
   
 programmer:
   icon: fa-solid fa-code
