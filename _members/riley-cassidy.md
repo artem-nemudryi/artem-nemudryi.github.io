@@ -1,7 +1,7 @@
 ---
 name: Riley Cassidy
 image: member_headshots/riley_cassidy.JPG
-role: undergrad-usp
+role: undergrad_usp
 aliases:
   - Riley Cassidy
   - Cassidy R.
