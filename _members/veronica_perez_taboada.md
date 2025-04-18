@@ -1,6 +1,6 @@
 ---
 name: Veronica Perez Taboada
-image: member_headshots/veronica_perez_taboada.jpeg
+image: member_headshots/veronica_perez_taboada.jpg
 role: rotation-phd
 aliases:
   - Veronica Perez Taboada
