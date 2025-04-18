@@ -9,11 +9,11 @@ aliases:
 
 
 links:
-  #email: 
+  email: v.pereztaboada@ufl.edu
   #orcid: 
   #google-scholar:
   #twitter: 
-  #linkedin: 
+  linkedin: veronica-perez-taboada-66b853282
   
 ---
 
