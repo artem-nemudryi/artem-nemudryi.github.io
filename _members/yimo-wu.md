@@ -1,5 +1,5 @@
 ---
-name: Yimo "Mr. Buffer" Wu
+name: Yimo Mr. Buffer Wu
 image: member_headshots/yimo_wu_v2.jpeg
 role: undergrad_usp
 aliases:
