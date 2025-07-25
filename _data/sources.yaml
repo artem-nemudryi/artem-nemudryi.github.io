@@ -2,6 +2,9 @@
   image: /images/VPT_et_al_2025_preprin_fig6.png
   publisher: bioRxiv
 
+- id: doi:10.1093/molbev/msae061
+  image: https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/mbe/41/4/10.1093_molbev_msae061/5/m_msae061f1.jpeg?Expires=1756161567&Signature=lBwxBnQz15ZhNt8ct~qKdigQ3rOugrF1VocNOLWib2CArzSV1rHkTo1s0xC79r3Zx33sy5bHIvgh-EVbezFbPjZXdhlYzGAoGfc4~YhBpkLF4jYkEakZ9g~axbNGkUEjgkJwVxp6~CtLvhLaUVSt-xeF4fXmhcb317U0Obp38vZOxS2oKlTp7FDA3zCsdJlyyE-PSnZ-6udmYgO-ICx0liDfaRUEdcO43pDkkXAtHnKqnYhKY51KqXR0W3pPMbBADK-z3R89lGTH8OYwq~VfNFznHIWpM7jvSp0K~6Yu~MeSr93if9Y5HRVtnrbLJ4LkLC0KKZAA2jOTpTOFoHXbLA__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA
+
 - id: doi:10.1126/science.adk5518
   image: https://www.science.org/cms/10.1126/science.adk5518/asset/aeaafbdb-8044-46ac-a2ce-883732b65a5a/assets/images/large/science.adk5518-f5.jpg
   buttons:
@@ -13,12 +16,8 @@
       link: https://www.the-scientist.com/a-crispr-tool-for-tinkering-with-the-human-transcriptome-72019
 
 
-- id: doi:10.1101/2023.08.29.555404
-  image: images/rna_break_and_repair_editing_v2.png
-  publisher: bioRxiv
-
 - id: doi:10.1126/sciadv.adj8277
-  image: https://www.science.org/cms/asset/511c768c-7014-4da6-98ce-58265db8e92e/sciadv.2023.9.issue-37.largecover.jpg
+  image: images/2023_SciAdv_cover.png
   buttons:
     - type: media
       text: CRISPR-Based Editing of RNA Viruses Developed, <em>Inside Precision Medicine</em>
