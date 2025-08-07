@@ -69,6 +69,9 @@
   
 - id: doi:10.2139/ssrn.3664367
   remove: true
+
+- id: doi:10.2139/ssrn.3793230
+  remove: true
     
 - id: doi:10.1101/2020.04.15.20066746
   remove: true
@@ -98,6 +101,9 @@
   remove: true
     
 - id: doi:10.1101/2023.09.17.558119
+  remove: true
+      
+- id: doi:10.21203/rs.3.rs-1466718/v1
   remove: true
   
 - id: doi:10.1073/pnas.2216430120
