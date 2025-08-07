@@ -66,7 +66,40 @@
 
 - id: doi:10.1089/scd.2015.0204
   remove: true
+  
+- id: doi:10.2139/ssrn.3664367
+  remove: true
+    
+- id: doi:10.1101/2020.04.15.20066746
+  remove: true
+  
+- id: doi:10.1101/2020.10.14.20212670
+  remove: true
 
+- id: doi:10.1101/2021.02.22.21252253
+  remove: true
+  
+- id: doi:10.1101/2021.12.16.473096
+  remove: true
+    
+- id: doi:10.1101/2022.02.09.479842
+  remove: true
+    
+- id: doi:10.1101/2022.04.01.486733
+  remove: true
+      
+- id: doi:10.1101/2022.04.01.486733
+  remove: true
+        
+- id: doi:10.1101/2023.08.29.555404
+  remove: true
+  
+- id: doi:10.1101/2023.05.19.541219
+  remove: true
+    
+- id: doi:10.1101/2023.09.17.558119
+  remove: true
+  
 - id: doi:10.1073/pnas.2216430120
   image: /images/pnas_secor.jpg
 
