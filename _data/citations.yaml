@@ -173,33 +173,6 @@
   plugin: sources.py
   file: sources.yaml
   image: https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-022-35445-5/MediaObjects/41467_2022_35445_Fig3_HTML.png?as=webp
-- id: doi:10.21203/rs.3.rs-1466718/v1
-  title: Sequence-specific capture and concentration of viral RNA by type III CRISPR
-    system enhances diagnostic
-  authors:
-  - Anna Nemudraia
-  - Artem Nemudryi
-  - Murat Buyukyoruk
-  - Andrew Scherffius
-  - Trevor Zahl
-  - Tanner Wiegand
-  - Shishir Pandey
-  - Joseph Nichols
-  - Laina Hall
-  - Aidan McVey
-  - Helen Lee
-  - Royce Wilkinson
-  - Laura Snyder
-  - Joshua Jones
-  - Kristin Koutmou
-  - Andrew Santiago-Frangos
-  - Blake Wiedenheft
-  publisher: Springer Science and Business Media LLC
-  date: '2022-04-19'
-  link: https://doi.org/g9vbdc
-  orcid: 0000-0003-0121-1363
-  plugin: orcid.py
-  file: orcid.yaml
 - id: doi:10.1016/j.gastha.2022.06.002
   title: Severe Acute Respiratory Syndrome Coronavirus 2 Is Detected in the Gastrointestinal
     Tract of Asymptomatic Endoscopy Patients but Is Unlikely to Pose a Significant
@@ -299,28 +272,6 @@
   - type: media
     text: MSU researchers publish study on coronavirus variant, <em>MSU News Service</em>
     link: https://www.montana.edu/news/21206/msu-researchers-publish-study-on-coronavirus-variant
-- id: doi:10.2139/ssrn.3793230
-  title: SARS-CoV-2 Genomic Surveillance Identifies Naturally Occurring Truncations
-    of ORF7a that Limit&amp;nbsp;Immune Suppression
-  authors:
-  - Artem Nemudryi
-  - Anna Nemudraia
-  - Tanner Wiegand
-  - Joseph Nichols
-  - Deann T. Snyder
-  - Jodi F. Hedges
-  - Calvin Cicha
-  - Helen Lee
-  - Karl K. Vanderwood
-  - Diane Bimczok
-  - Mark A. Jutila
-  - Blake Wiedenheft
-  publisher: SSRN Electronic Journal
-  date: '2021-01-01'
-  link: https://doi.org/g9vbdf
-  orcid: 0000-0003-0121-1363
-  plugin: orcid.py
-  file: orcid.yaml
 - id: doi:10.1016/j.xcrm.2020.100098
   title: Temporal Detection and Phylogenetic Assessment of SARS-CoV-2 in Municipal
     Wastewater
