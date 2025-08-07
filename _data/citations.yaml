@@ -556,22 +556,6 @@
   image: images/VPT_et_al_2025_preprin_fig6.png
   plugin: sources.py
   file: sources.yaml
-- id: 10.1093/molbev/msae061
-  title: The Diverse Evolutionary Histories of Domesticated Metaviral Capsid Genes
-    in Mammals
-  authors:
-  - William S Henriques
-  - Janet M Young
-  - Artem Nemudryi
-  - Anna Nemudraia
-  - Blake Wiedenheft
-  - Harmit S Malik
-  publisher: Molecular Biology and Evolution
-  date: '2024-03-20'
-  link: https://doi.org/gtrsmt
-  style: none
-  plugin: sources.py
-  file: sources.yaml
 - id: 10.1016/j.gastha.2022.06.002
   title: Severe Acute Respiratory Syndrome Coronavirus 2 Is Detected in the Gastrointestinal
     Tract of Asymptomatic Endoscopy Patients but Is Unlikely to Pose a Significant
