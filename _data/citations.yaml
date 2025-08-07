@@ -79,21 +79,6 @@
   - type: podcast
     text: Discussion on TWiV 1045 (from 34:11)
     link: https://www.microbe.tv/twiv/twiv-1045/
-- id: doi:10.1101/2023.05.19.541219
-  title: CRISPR-based engineering of RNA viruses
-  authors:
-  - Artem Nemudryi
-  - Anna Nemudraia
-  - Joseph E Nichols
-  - Andrew M Scherffius
-  - Trevor Zahl
-  - Blake Wiedenheft
-  publisher: Cold Spring Harbor Laboratory
-  date: '2023-05-20'
-  link: https://doi.org/g9vbc8
-  orcid: 0000-0003-0121-1363
-  plugin: orcid.py
-  file: orcid.yaml
 - id: doi:10.1073/pnas.2216430120
   title: Polyamines and linear DNA mediate bacterial threat assessment of bacteriophage
     infection
@@ -124,35 +109,6 @@
   plugin: sources.py
   file: sources.yaml
   image: /images/pnas_secor.jpg
-- id: doi:10.1101/2023.08.29.555404
-  title: Repair of CRISPR-guided RNA breaks enables site-specific RNA editing in human
-    cells
-  authors:
-  - Anna Nemudraia
-  - Artem Nemudryi
-  - Blake Wiedenheft
-  publisher: Cold Spring Harbor Laboratory
-  date: '2023-08-29'
-  link: https://doi.org/gtp3p2
-  orcid: 0000-0003-0121-1363
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1101/2023.09.17.558119
-  title: The diverse evolutionary histories of domesticated metaviral capsid genes
-    in mammals
-  authors:
-  - William S. Henriques
-  - Janet M. Young
-  - Artem Nemudryi
-  - Anna Nemudraia
-  - Blake Wiedenheft
-  - Harmit S. Malik
-  publisher: Cold Spring Harbor Laboratory
-  date: '2023-09-17'
-  link: https://doi.org/g9vbc9
-  orcid: 0000-0003-0121-1363
-  plugin: orcid.py
-  file: orcid.yaml
 - id: doi:10.1016/j.chom.2022.11.005
   title: "A viral \u201Ccodebreaker\u201D intercepts a host alarm"
   authors:
@@ -168,34 +124,6 @@
   plugin: sources.py
   file: sources.yaml
   image: https://ars.els-cdn.com/content/image/1-s2.0-S1931312822005613-gr1_lrg.jpg
-- id: doi:10.1101/2022.04.01.486733
-  title: Bacterial threat assessment of bacteriophage infection is mediated by intracellular
-    polyamine accumulation and Gac/Rsm signaling
-  authors:
-  - Camilla D. de Mattos
-  - Artem A. Nemudryi
-  - Dominick Faith
-  - DeAnna C. Bublitz
-  - Lauren Hammond
-  - Margie A. Kinnersley
-  - Caleb M. Schwartzkopf
-  - Autumn J. Robinson
-  - Alex Joyce
-  - Lia A. Michaels
-  - Robert S. Brzozowski
-  - Alison Coluccio
-  - Denghui David Xing
-  - Jumpei Uchiyama
-  - Laura K. Jennings
-  - Prahathees Eswara
-  - Blake Wiedenheft
-  - Patrick R. Secor
-  publisher: Cold Spring Harbor Laboratory
-  date: '2022-04-01'
-  link: https://doi.org/g9vbdb
-  orcid: 0000-0003-0121-1363
-  plugin: orcid.py
-  file: orcid.yaml
 - id: doi:10.1016/j.ymeth.2022.06.002
   title: CRISPR-Cas, Argonaute proteins and the emerging landscape of amplification-free
     diagnostics
@@ -318,21 +246,6 @@
   plugin: sources.py
   file: sources.yaml
   image: https://www.mdpi.com/viruses/viruses-14-02009/article_deploy/html/images/viruses-14-02009-g001-550.jpg
-- id: doi:10.1101/2022.02.09.479842
-  title: The rise and fall of SARS-CoV-2 variants and the emergence of competing Omicron
-    lineages
-  authors:
-  - Tanner Wiegand
-  - Aidan McVey
-  - Anna Nemudraia
-  - Artem Nemudryi
-  - Blake Wiedenheft
-  publisher: Cold Spring Harbor Laboratory
-  date: '2022-02-10'
-  link: https://doi.org/g9vbdd
-  orcid: 0000-0003-0121-1363
-  plugin: orcid.py
-  file: orcid.yaml
 - id: doi:10.1016/j.xcrm.2021.100319
   title: Intrinsic signal amplification by type III CRISPR-Cas systems provides a
     sequence-specific SARS-CoV-2 diagnostic
@@ -408,42 +321,6 @@
   orcid: 0000-0003-0121-1363
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.1101/2021.02.22.21252253
-  title: SARS-CoV-2 genomic surveillance identifies naturally occurring truncations
-    of ORF7a that limit immune suppression
-  authors:
-  - Artem Nemudryi
-  - Anna Nemudraia
-  - Tanner Wiegand
-  - Joseph Nichols
-  - Deann T Snyder
-  - Jodi F Hedges
-  - Calvin Cicha
-  - Helen Lee
-  - Karl K Vanderwood
-  - Diane Bimczok
-  - Mark Jutila
-  - Blake Wiedenheft
-  publisher: Cold Spring Harbor Laboratory
-  date: '2021-02-24'
-  link: https://doi.org/g9vbdg
-  orcid: 0000-0003-0121-1363
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1101/2021.12.16.473096
-  title: The rise and fall of SARS-CoV-2 variants and the mutational profile of Omicron
-  authors:
-  - Tanner Wiegand
-  - Aidan McVey
-  - Anna Nemudraia
-  - Artem Nemudryi
-  - Blake Wiedenheft
-  publisher: Cold Spring Harbor Laboratory
-  date: '2021-12-20'
-  link: https://doi.org/gsx4xt
-  orcid: 0000-0003-0121-1363
-  plugin: orcid.py
-  file: orcid.yaml
 - id: doi:10.1016/j.xcrm.2020.100098
   title: Temporal Detection and Phylogenetic Assessment of SARS-CoV-2 in Municipal
     Wastewater
@@ -468,64 +345,6 @@
   - type: media
     text: Sewers Are Now a COVID-19 Early-Warning System, <em>The Atlantic</em>
     link: https://www-stage.theatlantic.com/health/archive/2020/09/tracking-coronavirus-through-sewage/615958/
-- id: doi:10.1101/2020.10.14.20212670
-  title: Intrinsic Signal Amplification by Type-III CRISPR-Cas Systems Provides a
-    Sequence-Specific Viral Diagnostic
-  authors:
-  - Andrew Santiago-Frangos
-  - Laina N. Hall
-  - Anna Nemudraia
-  - Artem Nemudryi
-  - Pushya Krishna
-  - Tanner Wiegand
-  - Royce A. Wilkinson
-  - Deann T. Snyder
-  - Jodi F. Hedges
-  - Mark A. Jutila
-  - Matthew P. Taylor
-  - Blake Wiedenheft
-  publisher: Cold Spring Harbor Laboratory
-  date: '2020-10-20'
-  link: https://doi.org/gh3nmw
-  orcid: 0000-0003-0121-1363
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.2139/ssrn.3664367
-  title: Temporal Detection and Phylogenetic Assessment of SARS-CoV-2 in Municipal
-    Wastewater
-  authors:
-  - Artem Nemudryi
-  - Anna Nemudraia
-  - Tanner Wiegand
-  - Kevin Surya
-  - Murat Buyukyoruk
-  - Karl Vanderwood
-  - Royce Wilkinson
-  - Blake Wiedenheft
-  publisher: SSRN Electronic Journal
-  date: '2020-01-01'
-  link: https://doi.org/g9vbdh
-  orcid: 0000-0003-0121-1363
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1101/2020.04.15.20066746
-  title: Temporal detection and phylogenetic assessment of SARS-CoV-2 in municipal
-    wastewater
-  authors:
-  - Artem Nemudryi
-  - Anna Nemudraia
-  - Tanner Wiegand
-  - Kevin Surya
-  - Murat Buyukyoruk
-  - Karl K Vanderwood
-  - Royce Wilkinson
-  - Blake Wiedenheft
-  publisher: Cold Spring Harbor Laboratory
-  date: '2020-04-20'
-  link: https://doi.org/ggtwdx
-  orcid: 0000-0003-0121-1363
-  plugin: orcid.py
-  file: orcid.yaml
 - id: doi:10.1038/s41594-018-0173-y
   title: CRISPR RNA-guided autonomous delivery of Cas9
   authors:
@@ -554,33 +373,5 @@
   date: '2025-07-24'
   link: https://doi.org/g9wdht
   image: images/VPT_et_al_2025_preprin_fig6.png
-  plugin: sources.py
-  file: sources.yaml
-- id: 10.1016/j.gastha.2022.06.002
-  title: Severe Acute Respiratory Syndrome Coronavirus 2 Is Detected in the Gastrointestinal
-    Tract of Asymptomatic Endoscopy Patients but Is Unlikely to Pose a Significant
-    Risk to Healthcare Personnel
-  authors:
-  - Michelle D. Cherne
-  - Andrew B. Gentry
-  - Anna Nemudraia
-  - Artem Nemudryi
-  - Jodi F. Hedges
-  - Heather Walk
-  - Karlin Blackwell
-  - Deann T. Snyder
-  - Maria Jerome
-  - Wyatt Madden
-  - Marziah Hashimi
-  - T. Andrew Sebrell
-  - David B. King
-  - Raina K. Plowright
-  - Mark A. Jutila
-  - Blake Wiedenheft
-  - Diane Bimczok
-  publisher: Gastro Hep Advances
-  date: '2022-01-01'
-  link: https://doi.org/gtrsmw
-  style: none
   plugin: sources.py
   file: sources.yaml
