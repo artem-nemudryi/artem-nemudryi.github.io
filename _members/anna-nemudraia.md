@@ -1,5 +1,5 @@
 ---
-name: Anna Nemudraia, PhD
+name: Anna 'The Wizard' Nemudraia, PhD
 image: member_headshots/anna_nemudraia.jpg
 role: res-prof
 aliases:
