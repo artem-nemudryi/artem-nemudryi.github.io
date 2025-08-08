@@ -57,7 +57,7 @@ Our goal is to understand the molecular mechanisms that govern RNA repair and tr
 
 {%
   include feature.html
-  image="images/artem_and_anna.jpg"
+  image="images/2024_lab_action_photo.jpg"
   link="team"
   title="People"
   flip=true
