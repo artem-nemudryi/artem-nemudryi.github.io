@@ -1,5 +1,5 @@
 ---
-name: Riley Cassidy
+name: Riley 'Phage Queen' Cassidy
 image: member_headshots/riley_cassidy.JPG
 role: undergrad_usp
 aliases:
