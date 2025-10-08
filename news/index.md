@@ -5,7 +5,7 @@ nav:
   tooltip: What's good
 ---
 
-# What’s new in the Lab? {% include icon.html icon="fa-solid fa-feather-pointed" %}
+# What’s new in the Lab {% include icon.html icon="fa-solid fa-feather-pointed" %}
 
 <hr>
 
@@ -68,7 +68,7 @@ Our first preprint, <a href="https://doi.org/10.1101/2025.07.24.666596" target="
 <hr>
 **May 1, 2025**
 <br>
-Veronica Perez Taboada officially joins the lab as our first graduate student!
+Veronica Perez Taboada officially joins as the lab's first PhD student!
 
 <hr>
 **March 6, 2025**
