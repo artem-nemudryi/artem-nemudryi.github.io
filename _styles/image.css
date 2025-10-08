@@ -75,6 +75,14 @@ img {
   z-index: 0;
 }
 
+.scroll-hint {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #999;
+  margin-top: 4px;
+  user-select: none;
+}
+
 /* Smaller single image via include class */
 .img-60 {
   width: 60%;
