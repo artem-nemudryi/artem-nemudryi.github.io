@@ -7,7 +7,7 @@ nav:
 
 # Join the team {% include icon.html icon="fa-solid fa-user-plus" %}
 
-**Interested in joining the Nemudryi lab?** <br> If you are interested in joining the lab, email Artem ([artem.nemudryi@gmail.com](mailto:artem.nemudryi@gmail.com)) with a short description of your background and your research interests. Please include a [curriculum vitae (CV)](https://hwpi.harvard.edu/files/ocs/files/gsas-cvs-and-cover-letters.pdf) that includes your education, publication record, and contact information of your references.
+**Interested in joining the Nemudryi lab?** <br> Email Artem ([artem.nemudryi@gmail.com](mailto:artem.nemudryi@gmail.com)) with a short description of your background and your research interests. Please include a [curriculum vitae (CV)](https://hwpi.harvard.edu/files/ocs/files/gsas-cvs-and-cover-letters.pdf) that includes your education, publication record, and contact information of your references.
 
 
 
@@ -15,9 +15,9 @@ nav:
 
 # Contact us {% include icon.html icon="fa-regular fa-envelope" %}
 
-<div style="text-align: center;">
-The lab is located in the [Department of Biochemistry & Molecular Biology](https://biochem.med.ufl.edu) in the [College of Medicine at the University of Florida](https://med.ufl.edu).
-</div>
+
+The lab is located in the [Department of Biochemistry & Molecular Biology](https://biochem.med.ufl.edu) in the [University of Florida College of Medicine](https://med.ufl.edu).
+
 
 {%
   include button.html
