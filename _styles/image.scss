@@ -5,3 +5,168 @@ img {
   max-width: 100%;
   max-height: 100%;
 }
+
+
+/* -------------------------
+   Custom News Image Layouts
+   ------------------------- */
+
+/* Side-by-side image pair */
+.img-pair {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.img-pair img {
+  height: 480px;
+  border-radius: 8px;
+}
+
+/* Horizontal scroll strip */
+.img-row {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+  scroll-snap-type: x mandatory;
+}
+
+.img-row img {
+  height: 480px; // tweak height as desired
+  border-radius: 8px;
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+}
+
+/* ---------------------------------
+   Scrollable Row Edge Fade (optional)
+   --------------------------------- */
+
+/* Wrap .img-row inside .img-row-wrapper to get fade effect */
+.img-row-wrapper {
+  position: relative;
+}
+
+/* fade overlay containers */
+.img-row-wrapper::before,
+.img-row-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 40px; /* width of fade zone */
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* left fade */
+.img-row-wrapper::before {
+  left: 0;
+  background: linear-gradient(to right, var(--bg-color) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+/* right fade */
+.img-row-wrapper::after {
+  right: 0;
+  background: linear-gradient(to left, var(--bg-color) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+/* Ensure images scroll underneath fades */
+.img-row {
+  position: relative;
+  z-index: 0;
+}
+
+/* Smaller single image via include class */
+.img-60 {
+  width: 60%;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Smaller single image via include class */
+.img-480 {
+  height: 480px;
+  border-radius: 8px;
+}
+
+
+/* Two-up, seamless */
+.img-pair-tight {
+  display: flex;
+  gap: 0;                 /* no seam */
+  justify-content: center;
+  align-items: stretch;   /* same height */
+  overflow: hidden;       /* clip rounded corners */
+  border-radius: 10px;    /* outer corners only */
+}
+
+.img-pair-tight img {
+  width: 50%;
+  height: 100%;
+  display: block;         /* remove inline gaps */
+  object-fit: cover;      /* crop to match heights */
+  border-radius: 0;       /* inner seam stays square */
+}
+
+/* Mobile: stack nicely */
+@media (max-width: 640px) {
+  .img-pair-tight {
+    flex-direction: column;
+  }
+  .img-pair-tight img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+
+
+/* ---------------------------------
+   Image on Left, Text on Right
+   --------------------------------- */
+
+/* Image on left, text on right — top-aligned */
+.text-img {
+  display: flex;
+  align-items: flex-start;   /* align top edges */
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;           /* stack on smaller screens */
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.text-img .image {
+  flex: 0 0 35%;             /* image column width */
+  text-align: left;
+}
+
+.text-img .image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
+.text-img .text {
+  flex: 1 1 60%;             /* text column width */
+  text-align: left;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+@media (max-width: 700px) {
+  .text-img {
+    flex-direction: column;
+  }
+  .text-img .image,
+  .text-img .text {
+    flex: 1 1 100%;
+  }
+}
+
