@@ -5,7 +5,7 @@ nav:
   tooltip: Our science
 ---
 
-# {% include icon.html icon="fa-solid fa-dna" %}Our research
+# Our research  {% include icon.html icon="fa-solid fa-dna" %}
 ## <br>
 
 
