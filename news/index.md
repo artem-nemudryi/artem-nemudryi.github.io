@@ -12,13 +12,16 @@ nav:
 **September 15, 2025**
 <div class="text-img">
   <div class="image">
+    
     <div class="img-row-wrapper">
   <div class="img-row">
     <img src="/news/images/20250915_2.jpg" alt="lab bday 1">
     <img src="/news/images/20250915_1.jpg" alt="lab bday 1">
   </div>
+  <div class="scroll-hint">← scroll →</div>
 </div>
 </div>
+
   
  <div class="text">   
 The Nemudryi Lab celebrates its one-year anniversary! 🎉
@@ -114,10 +117,12 @@ Undergraduate students Yimo Wu and Samuel Schweitzer successfully purified plasm
 
 <div class="image">
     <div class="img-row-wrapper">
+        
   <div class="img-row">
     <img src="/news/images/20240915_2.jpg" alt="Empty lab 1">
     <img src="/news/images/20240915_1.jpg" alt="Empty lab 2">
   </div>
+  <div class="scroll-hint">← scroll →</div>
 </div>
 </div>
 
