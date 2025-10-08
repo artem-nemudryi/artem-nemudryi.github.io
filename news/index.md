@@ -2,7 +2,7 @@
 title: News
 nav:
   order: 4
-  tooltip: What's good
+  tooltip: What's good?
 ---
 
 # What’s New in the Lab? {% include icon.html icon="fa-solid fa-feather-pointed" %}
