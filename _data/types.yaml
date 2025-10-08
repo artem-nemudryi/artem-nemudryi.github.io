@@ -18,6 +18,10 @@ phd:
   #icon: fa-solid fa-lightbulb
   description: PhD Student
 
+gtp-t32-phd:
+  #icon: fa-solid fa-lightbulb
+  description: PhD Student<br>⭐T32 Genetics Training Fellow⭐  
+
 rotation-phd:
   #icon: fa-solid fa-lightbulb
   description: Rotation PhD Student
@@ -28,7 +32,7 @@ undergrad:
 
 undergrad_usp:
   #icon: fa-solid fa-seedling
-  description: Undergraduate Student,<br>COM University Scholar
+  description: Undergraduate Student<br>⭐COM University Scholar⭐
   
 programmer:
   icon: fa-solid fa-code
