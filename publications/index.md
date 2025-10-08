@@ -5,7 +5,7 @@ nav:
   tooltip: Our published work
 ---
 
-# {% include icon.html icon="fa-solid fa-newspaper" %}Publications
+# Publications  {% include icon.html icon="fa-solid fa-newspaper" %}
 
 <br>
 To view a complete list of Dr. Nemudryi's publications, please visit [Google Scholar](https://scholar.google.com/citations?user=Xiqh_0sAAAAJ&hl=en&authuser=1) or [PubMed](https://www.ncbi.nlm.nih.gov/myncbi/artem.nemudryi.2/bibliography/public/).
