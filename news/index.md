@@ -5,7 +5,7 @@ nav:
   tooltip: What's good
 ---
 
-# What’s new in the Lab {% include icon.html icon="fa-solid fa-feather-pointed" %}
+# What’s New in the Lab? {% include icon.html icon="fa-solid fa-feather-pointed" %}
 
 <hr>
 
