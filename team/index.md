@@ -6,7 +6,7 @@ nav:
 ---
 
 
-# {% include icon.html icon="fa-solid fa-users" %}Our team
+# Our team  {% include icon.html icon="fa-solid fa-users" %}
 
 <hr>
 {% include list.html data="members" component="portrait" filters="role: pi" %}
