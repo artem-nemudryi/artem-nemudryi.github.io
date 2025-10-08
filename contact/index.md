@@ -5,17 +5,19 @@ nav:
   tooltip: Email, address, and location
 ---
 
-# {% include icon.html icon="fa-regular fa-envelope" %}Contact
+# Join the team {% include icon.html icon="fa-solid fa-user-plus" %}
 
-The lab is located in the [Department of Biochemistry & Molecular Biology](https://biochem.med.ufl.edu) at the [UF College of Medicine](https://med.ufl.edu).
+**Interested in joining the Nemudryi lab?** <br> If you are interested in joining the lab, email Artem ([artem.nemudryi@gmail.com](mailto:artem.nemudryi@gmail.com)) with a short description of your background and your research interests. Please include a [curriculum vitae (CV)](https://hwpi.harvard.edu/files/ocs/files/gsas-cvs-and-cover-letters.pdf) that includes your education, publication record, and contact information of your references.
 
 
 
-{%
-  include figure.html
-  image="images/2021-04-20_Campus-Photos-5_2K.jpg"
-  caption="Image courtesy of UF Photography"
-%}
+{% include section.html %}
+
+# Contact us {% include icon.html icon="fa-regular fa-envelope" %}
+
+<div style="text-align: center;">
+The lab is located in the [Department of Biochemistry & Molecular Biology](https://biochem.med.ufl.edu) in the [College of Medicine at the University of Florida](https://med.ufl.edu).
+</div>
 
 {%
   include button.html
@@ -26,19 +28,28 @@ The lab is located in the [Department of Biochemistry & Molecular Biology](https
 {%
   include button.html
   type="phone"
-  text="(352)-294-8396"
-  link="+1-352-294-8396"
+  text="(352)-294-3538"
+  link="+1-352-294-3538"
 %}
 
 
-{% include section.html %}
+{%
+  include figure.html
+  image="images/2021-04-20_Campus-Photos-5_2K.jpg"
+  caption="Image courtesy of UF Photography"
+%}
 
 
-## {% include icon.html icon="fa-regular fa-truck" %}Mailing address
+
+
+
+
+
+## Mailing address  {% include icon.html icon="fa-solid fa-truck-fast" %}
 
 **Nemudryi lab**<br>
 1200 Newell Drive,<br>
-Academic Research Building, R3-285<br>
+Academic Research Building, R3-234<br>
 Gainesville, FL 32610
 
 
