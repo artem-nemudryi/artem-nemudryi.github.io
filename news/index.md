@@ -9,6 +9,23 @@ nav:
 
 <hr>
 
+**October, 2025**
+<div class="text-img">
+
+  <div class="image">
+    <img src="/news/images/20251104_dino.jpg" alt="Dino doodle">
+  </div>
+ 
+ <div class="text"> 
+Riley's dino doodle was highlighted <a href="https://www.instagram.com/p/DO8k1CFFfdN/?hl=en" target="_blank" rel="noopener noreferrer">
+      by Plasmidsaurus</a>!
+      <br>Persistence is the key 😌
+</div>
+
+</div>
+
+<hr>
+
 **September 15, 2025**
 <div class="text-img">
   <div class="image">
