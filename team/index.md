@@ -17,6 +17,7 @@ nav:
 
 {% include list.html data="members" component="portrait" filters="role: phd|rotation-phd" %}
 {% include list.html data="members" component="portrait" filters="role: undergrad" %}
+{% include list.html data="members" component="portrait" filters="role: intern" %}
 
 <hr>
 <span style="text-decoration: underline;">**Alumni**</span><br>
