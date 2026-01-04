@@ -8,7 +8,7 @@ nav:
 
 # Join the team {% include icon.html icon="fa-solid fa-user-plus" %}
 
-**Interested in joining the Nemudryi lab?** <br> Email Artem ([artem.nemudryi@gmail.com](mailto:artem.nemudryi@gmail.com)) with a short description of your background and your research interests. Please include a [curriculum vitae (CV)](https://hwpi.harvard.edu/files/ocs/files/gsas-cvs-and-cover-letters.pdf) that includes your education, publication record, and contact information of your references.
+**Interested in joining the Nemudryi lab?** <br> [Email Artem](mailto:artem.nemudryi@gmail.com) with a short description of your background and your research interests. Please include a [curriculum vitae (CV)](https://hwpi.harvard.edu/files/ocs/files/gsas-cvs-and-cover-letters.pdf) that highlights your education, publication record, and contact information of your references.
 
 <hr>
 
