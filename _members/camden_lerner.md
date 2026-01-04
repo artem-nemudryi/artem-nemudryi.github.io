@@ -1,7 +1,7 @@
 ---
 name: Camden Lerner
 image: member_headshots/camden_lerner.png
-role: undergrad
+role: undergrad_usp
 aliases:
   - Camden Lerner
   - Lerner, Camden
