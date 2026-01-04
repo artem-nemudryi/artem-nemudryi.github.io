@@ -460,7 +460,9 @@
   </nav>
 </header>
 
-    <main>
+
+    <!-- Swup container -->
+    <main id="swup" class="transition-fade">
       <!--
   modify main content of page:
   - add section breaks
@@ -3926,6 +3928,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 
     </main>
+
     
 
 
@@ -4027,5 +4030,53 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
   <input type="checkbox" class="dark-toggle" data-tooltip="Dark mode" aria-label="toggle dark mode" oninput="onDarkToggleChange(event)">
 </footer>
 
+
+    <!-- AOS (if not already loaded elsewhere) -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <!-- Swup -->
+    <script src="https://unpkg.com/swup@4"></script>
+
+    <!-- Swup + AOS integration (inline) -->
+    <script>
+      (function () {
+        function initAOS() {
+          if (!window.AOS) return;
+          AOS.init({
+            duration: 450,
+            once: true,
+            offset: 40,
+            easing: "ease-out",
+          });
+          AOS.refreshHard();
+        }
+
+        document.addEventListener("DOMContentLoaded", initAOS);
+
+        const swup = new Swup({
+          containers: ["#swup"],
+          linkSelector: ['a[href^="/"]', 'a[href^="./"]', 'a[href^="../"]']
+            .map((s) => s + ":not([data-no-swup])")
+            .join(","),
+
+          ignoreVisit: function (url, { el } = {}) {
+            const href = (el && el.getAttribute && el.getAttribute("href")) || url;
+
+            if (href && href.includes("#")) return true;
+            if (href && /\.(pdf|zip|png|jpg|jpeg|gif|svg)$/i.test(href)) return true;
+            if (el && el.hasAttribute && el.hasAttribute("download")) return true;
+            if (el && el.getAttribute && el.getAttribute("target") === "_blank") return true;
+            if (href && /^(mailto:|tel:)/i.test(href)) return true;
+
+            return false;
+          },
+        });
+
+        swup.hooks.on("page:view", () => {
+          initAOS();
+        });
+      })();
+    </script>
   </body>
 </html>
