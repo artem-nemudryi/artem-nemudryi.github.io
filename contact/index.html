@@ -452,7 +452,7 @@
     <h1 id="join-the-team-">Join the team <i class="icon fa-solid fa-user-plus"></i>
 </h1>
 
-<p><strong>Interested in joining the Nemudryi lab?</strong> <br> <a href="mailto:artem.nemudryi@gmail.com">Email Artem</a> with a short description of your background and your research interests. Please include a <a href="https://hwpi.harvard.edu/files/ocs/files/gsas-cvs-and-cover-letters.pdf">curriculum vitae (CV)</a> that highlights your education, publication record, and contact information of your references.</p>
+<p><strong>Interested in joining the Nemudryi lab?</strong> <br> <a href="mailto:artem.nemudryi@gmail.com">Email Artem</a> with a short description of your background and your research interests. Please include a <a href="https://docs.google.com/document/d/1rK2prBm6ga4EGdlbNZ66NS0_KBLrOCSf/edit">curriculum vitae (CV)</a> that highlights your education, publication record, and contact information of your references.</p>
 
 <hr>
 
@@ -612,16 +612,18 @@ Gainesville, FL 32610</p>
 </footer>
 
 
-    <!-- AOS (if not already loaded elsewhere) -->
+    <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
     <!-- Swup -->
     <script src="https://unpkg.com/swup@4"></script>
 
-    <!-- Swup + AOS integration (inline) -->
+    <!-- Swup + AOS + active-nav integration -->
     <script>
       (function () {
+
+        /* ---------- AOS ---------- */
         function initAOS() {
           if (!window.AOS) return;
           AOS.init({
@@ -633,8 +635,26 @@ Gainesville, FL 32610</p>
           AOS.refreshHard();
         }
 
-        document.addEventListener("DOMContentLoaded", initAOS);
+        /* ---------- Active nav underline ---------- */
+        function updateActiveNav() {
+          const path = window.location.pathname.replace(/index\.html$/, "");
+          document.querySelectorAll("header nav a.nav-link").forEach((a) => {
+            const href = new URL(a.getAttribute("href"), window.location.origin)
+              .pathname.replace(/index\.html$/, "");
+            if (href === path) {
+              a.setAttribute("aria-current", "page");
+            } else {
+              a.removeAttribute("aria-current");
+            }
+          });
+        }
 
+        document.addEventListener("DOMContentLoaded", () => {
+          initAOS();
+          updateActiveNav();
+        });
+
+        /* ---------- Swup ---------- */
         const swup = new Swup({
           containers: ["#swup"],
           linkSelector: ['a[href^="/"]', 'a[href^="./"]', 'a[href^="../"]']
@@ -656,7 +676,9 @@ Gainesville, FL 32610</p>
 
         swup.hooks.on("page:view", () => {
           initAOS();
+          updateActiveNav();
         });
+
       })();
     </script>
   </body>
