@@ -601,18 +601,16 @@
 </footer>
 
 
-    <!-- AOS -->
+    <!-- AOS (if not already loaded elsewhere) -->
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
     <!-- Swup -->
     <script src="https://unpkg.com/swup@4"></script>
 
-    <!-- Swup + AOS + active-nav integration -->
+    <!-- Swup + AOS integration (inline) -->
     <script>
       (function () {
-
-        /* ---------- AOS ---------- */
         function initAOS() {
           if (!window.AOS) return;
           AOS.init({
@@ -624,26 +622,8 @@
           AOS.refreshHard();
         }
 
-        /* ---------- Active nav underline ---------- */
-        function updateActiveNav() {
-          const path = window.location.pathname.replace(/index\.html$/, "");
-          document.querySelectorAll("header nav a.nav-link").forEach((a) => {
-            const href = new URL(a.getAttribute("href"), window.location.origin)
-              .pathname.replace(/index\.html$/, "");
-            if (href === path) {
-              a.setAttribute("aria-current", "page");
-            } else {
-              a.removeAttribute("aria-current");
-            }
-          });
-        }
+        document.addEventListener("DOMContentLoaded", initAOS);
 
-        document.addEventListener("DOMContentLoaded", () => {
-          initAOS();
-          updateActiveNav();
-        });
-
-        /* ---------- Swup ---------- */
         const swup = new Swup({
           containers: ["#swup"],
           linkSelector: ['a[href^="/"]', 'a[href^="./"]', 'a[href^="../"]']
@@ -665,9 +645,7 @@
 
         swup.hooks.on("page:view", () => {
           initAOS();
-          updateActiveNav();
         });
-
       })();
     </script>
   </body>
