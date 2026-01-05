@@ -1,9 +1,9 @@
 # site properties and page defaults
-title: Nemudryi lab
-subtitle: RNA editing - RNA repair - RNA viruses
+title: Nemudryi Lab
+#subtitle: RNA editing - RNA repair - RNA viruses
 description: 
-header: images/campus_and_blooms-6448_2K.jpg
-footer: images/2021-07-15_Summer_B-9848_2K.jpg
+header: images/c881dc5b-d032-42b0-8233-82b1e45d5528.png
+footer: images/c881dc5b-d032-42b0-8233-82b1e45d5528_footer.png
 proofer: false
 
 # site social media and other links
