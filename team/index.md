@@ -6,9 +6,9 @@ nav:
 ---
 
 
-# Our team  {% include icon.html icon="fa-solid fa-users" %}
+<!--# Our team  {% include icon.html icon="fa-solid fa-users" %} -->
 
-<hr>
+<!--<hr>-->
 {% include list.html data="members" component="portrait" filters="role: pi" %}
 
 {% include list.html data="members" component="portrait" filters="role: res-prof" %}
