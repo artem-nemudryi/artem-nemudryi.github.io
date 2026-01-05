@@ -579,7 +579,7 @@
     <!-- Swup -->
     <script src="https://unpkg.com/swup@4"></script>
 
-    <!-- Swup + AOS + active-nav integration -->
+    <!-- Swup + AOS + active-nav + mobile-nav-collapse integration -->
     <script>
       (function () {
 
@@ -598,20 +598,30 @@
         /* ---------- Active nav underline ---------- */
         function updateActiveNav() {
           const path = window.location.pathname.replace(/index\.html$/, "");
-          document.querySelectorAll("header nav a.nav-link").forEach((a) => {
+          document.querySelectorAll("header nav a").forEach((a) => {
             const href = new URL(a.getAttribute("href"), window.location.origin)
               .pathname.replace(/index\.html$/, "");
-            if (href === path) {
-              a.setAttribute("aria-current", "page");
-            } else {
-              a.removeAttribute("aria-current");
-            }
+            if (href === path) a.setAttribute("aria-current", "page");
+            else a.removeAttribute("aria-current");
           });
+        }
+
+        /* ---------- Close mobile nav (checkbox menu) ---------- */
+        function closeMobileNav() {
+          const toggle = document.querySelector("header .nav-toggle");
+          if (toggle) toggle.checked = false;
         }
 
         document.addEventListener("DOMContentLoaded", () => {
           initAOS();
           updateActiveNav();
+          closeMobileNav();
+        });
+
+        /* Close menu immediately when a nav link is tapped */
+        document.addEventListener("click", (e) => {
+          const a = e.target.closest("header nav a");
+          if (a) closeMobileNav();
         });
 
         /* ---------- Swup ---------- */
@@ -637,6 +647,7 @@
         swup.hooks.on("page:view", () => {
           initAOS();
           updateActiveNav();
+          closeMobileNav();
         });
 
       })();
