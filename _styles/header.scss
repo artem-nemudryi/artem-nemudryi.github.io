@@ -51,7 +51,7 @@ header a {
 }
 
 .title {
-  font-size: var(--title);
+  font-size: clamp(2.0rem, 5vw, 3.6rem)
   font-weight: 600;
 }
 
