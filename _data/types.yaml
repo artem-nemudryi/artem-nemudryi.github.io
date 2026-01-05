@@ -20,7 +20,7 @@ phd:
 
 gtp-t32-phd:
   #icon: fa-solid fa-lightbulb
-  description: PhD Student<br><i>T32 GTP Fellow</i> 
+  description: PhD Student<br>T32 GTP Fellow
 
 rotation-phd:
   #icon: fa-solid fa-lightbulb
