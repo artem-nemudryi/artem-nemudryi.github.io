@@ -20,7 +20,7 @@ Our team is growing, and we actively seek new members. **[Contact us](contact) i
 %}
 
 <h2>Our research</h2>
-We use cutting-edge molecular techniques and computational biology to understand the mechanisms of antiviral immunity across the domains of life and translate this understanding into innovative molecular tools.
+We use computational biology and cutting-edge molecular techniques to understand the mechanisms of antiviral immunity across the domains of life and translate this understanding into innovative molecular tools.
 
 {%
   include button.html
