@@ -2,13 +2,16 @@
 layout: default
 ---
 
-<h1>{{ page.name | default: page.title  }}</h1>
+<h1 style="text-align: center;">{{ page.name | default: page.title  }}</h1>
 
 {%- include member-photo.html image=page.image -%}
 
+{% if member.award %}
+  <p class="highlight-line">{{ member.award }}</p>
+{% endif %}
 
 <p class="center">
-  <h4 style="text-align: center;">{%- include role.html type=page.role text=true description=page.description -%}</h4>
+  <h2 style="text-align: center;">{%- include role.html type=page.role text=true description=page.description -%}</h2>
 </p>
 
 
@@ -40,4 +43,3 @@ layout: default
 {%- capture text -%}
   See {{ page.name | default: page.title }}'s papers on the Publications page
 {%- endcapture -%}
-
