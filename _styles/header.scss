@@ -163,21 +163,22 @@ header[data-big] {
   }
 }
 
-/* Nav tabs */
+/* Underline the active top nav tab */
 header nav a.nav-link {
   position: relative;
   text-decoration: none;
 }
 
-/* Underline active tab */
+/* active tab underline */
 header nav a.nav-link[aria-current="page"]::after {
   content: "";
   position: absolute;
-  left: 6%;
-  right: 6%;
-  bottom: 5px;     /* adjust if needed */
-  height: 1px;       /* underline thickness */
+  left: 12%;
+  right: 12%;
+  bottom: -10px;   /* adjust if needed */
+  height: 3px;
   background: currentColor;
-  opacity: 0.95;
+  opacity: 0.9;
   border-radius: 2px;
 }
+
