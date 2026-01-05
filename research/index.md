@@ -1,56 +1,42 @@
 ---
 title: Research
 nav:
-  order: 1
+  order: 2
   tooltip: Our science
 ---
-
-# Our research  {% include icon.html icon="fa-solid fa-dna" %}
-## <br>
-
+<h2>Prokaryotic immunity</h2>
 
 {% capture text %}
+Bacteriophages, viruses that infect bacteria, outnumber their hosts tenfold. The fierce selective pressure from phage predation has driven bacteria to evolve a vast variety of defense mechanisms. **The molecular mechanisms for most of these immune systems remain unknown, and many more systems remain to be discovered.**
 
-Our goal is to understand the molecular mechanisms that govern RNA repair and translate this fundamental understanding into new RNA editing tools for applications in science and medicine.<br><br>
-We use CRISPR-guided ribonucleases to study how human cells repair RNA and how RNA viruses co-opt these mechanisms for their own benefit.
+Our recent work demonstrated a direct evolutionary link between tRNA-targeting antiviral effectors in bacteria and humans, highlighting the remarkable conservation of viral defense across domains of life. We found that homologs of human antiviral Schlafen tRNases protect bacteria from phage (*Perez Taboada et al., see bioRxiv preprint*).
+
+Prokaryotic Schlafens (pSchlafen) act as tRNA-targeting anti-phage effectors that are fused to a variety of phage sensors. We aim to understand how diverse pSchlafen proteins sense phage infection and determine the molecular mechanisms of phage defense.
+
+{% endcapture %}
+
+{%
+  include feature.html
+  image="images/schlafen_defense.png"
+  link="research"
+  text=text
+  flip = true
+%}
+
+<h2>Targeting RNA with CRISPR</h2>
+{% capture text %}
+How do cells cope with RNA damage? The prevailing view is that defective RNA is cleared and replaced as the new RNA is transcribed. **Why repair RNA if cells can re-synthesize it?**
+
+Our recent work challenges this paradigm. We discovered that human cells repair RNA breaks induced by CRISPR ribonucleases and leveraged this mechanism to make programmable deletions in the human transcriptome (*Nemudraia, Nemudryi & Wiedenheft; Science, 2024*). 
+
+We use programmable CRISPR ribonucleases to break RNA, study how it is repaired, and develop RNA editing tools with therapeutic potential.
 
 {% endcapture %}
 
 {%
   include feature.html
   image="images/rna_editing_rna_repair.png"
-  link="publications"
-  title="RNA editing & RNA repair"
+  link="research"
   text=text
+  flip = true
 %}
-
-
-<br>
-The biological importance of RNA repair is often dismissed because of the fast turnaround of RNA in the cell. **Why bother repairing RNA if cells can synthesize it anew?**
-
-We challenge this paradigm and ask:<br>
-•	**Do cells repair broken RNA, how do they do it, and why does it matter?** What are the mechanisms, and what is their biological significance?<br>
-• **Can we co-opt cellular RNA repair to edit information in our genes safely and reversibly?**<br><br>
-
-<hr>
-**Human RNA repair** <br>
-Our understanding of mechanisms that cells use to cope with RNA damage is limited, in part due to the lack of tools to damage RNA without confounding effects on DNA. We have used type III-A CRISPR complexes to make programmable RNA breaks in human transcripts and demonstrated that RNA breaks are repaired in human cells. We leverage this process for programmable RNA excisions to develop applications for treating genetic diseases.
-
-{% include citation.html lookup="Repair of CRISPR-guided RNA breaks enables site-specific RNA excision" style="rich" %}
-
-<hr>
-**Recombinant RNA technologies** <br>
-We have combined sequence-specific RNA cleavage by CRISPR ribonucleases with programmable RNA repair to make precise deletions and insertions in RNA. This *in vitro* recombinant RNA technology enables rapid and facile engineering of RNA viruses, and we use this approach to dissect the effect of recurring mutations in viral genomes on viral phenotypes.
-
-{% include citation.html lookup="CRISPR-based engineering of RNA viruses" style="rich" %}
-
-
-## <br>
-
-**Mechanisms of viral RNA replication**
-
-The paradigm "*Why repair RNA if you can re-synthesize it?*" does not work in the case of RNA viruses because RNA is all they have. We are interested in mechanisms that RNA viruses have evolved to maintain the integrity of their genomes, counteract innate immunity, and promote viral replication.
-
-
-{% include citation.html lookup="SARS-CoV-2 genomic surveillance identifies naturally occurring truncation of ORF7a that limits immune suppression" style="rich" %}
-
