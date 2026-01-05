@@ -1,14 +1,9 @@
 ---
 title: People
 nav:
-  order: 2
+  order: 3
   tooltip: Our team
 ---
-
-
-<!--# Our team  {% include icon.html icon="fa-solid fa-users" %} -->
-
-<!--<hr>-->
 {% include list.html data="members" component="portrait" filters="role: pi" %}
 
 {% include list.html data="members" component="portrait" filters="role: res-prof" %}
@@ -18,8 +13,8 @@ nav:
 {% include list.html data="members" component="portrait" filters="role: phd|rotation-phd" %}
 {% include list.html data="members" component="portrait" filters="role: undergrad" %}
 {% include list.html data="members" component="portrait" filters="role: intern" %}
-
-<hr><span style="text-decoration: underline;">**Alumni**</span><br>
+<hr>
+<span style="text-decoration: underline;">**Alumni**</span><br>
 **Jarret Revels**, Santa Fe College Intern, Fall 2025<br>
 **Samuel Schweitzer**, undergraduate student, October 2024 – December 2025<br>
 **Asher Shinde**, undergraduate student, Summer 2025<br>
