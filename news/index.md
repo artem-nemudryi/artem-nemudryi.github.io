@@ -4,9 +4,7 @@ nav:
   order: 4
   tooltip: What's good?
 ---
-
-# What’s new in the Lab? {% include icon.html icon="fa-solid fa-feather-pointed" %}
-
+<!-- # What’s new in the Lab? {% include icon.html icon="fa-solid fa-feather-pointed" %} -->
 <hr>
 
 **October, 2025**
