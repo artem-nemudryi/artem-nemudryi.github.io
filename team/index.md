@@ -13,7 +13,7 @@ nav:
 
 {% include list.html data="members" component="portrait" filters="role: res-prof" %}
 
-<hr>
+<!--<hr>-->
 
 {% include list.html data="members" component="portrait" filters="role: phd|rotation-phd" %}
 {% include list.html data="members" component="portrait" filters="role: undergrad" %}
