@@ -7,25 +7,27 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 40px 0 20px 0;
+  margin: 10px 0 10px 0;
   font-family: var(--heading);
   font-weight: var(--semi-bold);
   text-align: left;
-  letter-spacing: 1px;
+  letter-spacing: 0px;
 }
 
 h1 {
   font-size: 1.6rem;
-  font-weight: var(--regular);
+  font-weight: 600;
   text-transform: none;
-  text-align: center;
+  text-align: left;
+  letter-spacing: 0px;
 }
 
 h2 {
-  font-size: 1.6rem;
-  padding-bottom: 5px;
-  border-bottom: solid 1px var(--light-gray);
-  font-weight: var(--regular);
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-align: left;
+  letter-spacing: 0px;
+  color: #8893ae
 }
 
 h3 {
