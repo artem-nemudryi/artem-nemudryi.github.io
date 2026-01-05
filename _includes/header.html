@@ -25,8 +25,9 @@
         {% endif %}
       </span>
     {% endif %}
+
     {% if site.logo-text != false %}
-      <span class="title-text" data-tooltip="Home">
+      <span class="title-text">
         {% if site.title and site.show-title != false %}
           <span class="title">{{ site.title }}</span>
         {% endif %}
@@ -39,27 +40,27 @@
 
   <input class="nav-toggle" type="checkbox" aria-label="show/hide nav">
 
-<nav>
-  {% assign pages = site.pages
-    | where_exp: "page", "page.nav"
-    | sort: "nav.order"
-  %}
-  {% for page in pages %}
-    {% if page.nav %}
-      {% assign current = page.url | replace:'index.html','' %}
-      {% assign target = page.dir | relative_url %}
-      <a
-        href="{{ target }}"
-        class="nav-link"
-        data-tooltip="{{ page.nav.tooltip }}"
-        {% if current == target %}
-          aria-current="page"
-        {% endif %}
-      >
-        {{ page.title }}
-      </a>
-    {% endif %}
-  {% endfor %}
-</nav>
+  <nav>
+    {% assign pages = site.pages
+      | where_exp: "page", "page.nav"
+      | sort: "nav.order"
+    %}
+    {% for page in pages %}
+      {% if page.nav %}
+        {% assign current = page.url | replace:'index.html','' %}
+        {% assign target = page.dir | relative_url %}
+
+        <a
+          href="{{ target }}"
+          class="nav-link"
+          {% if current == target %}
+            aria-current="page"
+          {% endif %}
+        >
+          {{ page.title }}
+        </a>
+      {% endif %}
+    {% endfor %}
+  </nav>
 
 </header>
