@@ -7,7 +7,7 @@ pi:
   description: Principal Investigator
 
 res-prof:
-  icon: fa-solid fa-hat-wizard
+  #icon: fa-solid fa-hat-wizard
   description: Research Assistant Professor
 
 postdoc:
