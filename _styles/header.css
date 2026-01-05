@@ -39,9 +39,15 @@ header a {
 
 .title {
   font-size: var(--title);
+  line-height: 1.1;
   font-weight: 600;
 }
 
+@media (max-width: 768px) {
+  header .title {
+    text-wrap: balance;
+  }
+}
 .subtitle {
   opacity: 0.65;
   font-weight: var(--thin);
