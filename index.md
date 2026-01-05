@@ -6,7 +6,7 @@ nav:
 ---
 {% capture text %}
 <h2>Our team</h2>
-The Nemudryi Lab opened in September 2024 in the [Department of Biochemistry & Molecular Biology](https://biochem.med.ufl.edu) at the [UF College of Medicine](https://med.ufl.edu).
+The Nemudryi Lab opened in September 2024 in the [Department of Biochemistry & Molecular Biology](https://biochem.med.ufl.edu/profile/nemudryi-artem/) at the [UF College of Medicine](https://med.ufl.edu).
 
 Our team is growing, and we actively seek new members. **[Contact us](contact) if you are interested in joining!**
 
