@@ -1,66 +1,208 @@
-{% assign image = page.header | default: site.header | relative_url %}
-{% assign dark = page.header-dark | is_nil: site.header-dark | is_nil: true %}
+---
+---
 
-{% assign svg = "images/logo.svg" | file_exists %}
-{% assign png = "images/logo.png" | file_exists %}
-{% assign jpg = "images/logo.jpg" | file_exists %}
-{% assign logo = svg | default: png | default: jpg | default: nil %}
+$logo-big: 100px;
+$logo: 40px;
+$big-padding: 100px;
+$collapse: 700px;
+$sticky: true;
 
-<header
-  class="background"
-  style="--image: url('{{ image }}')"
-  {% if dark == true or dark == false %}
-    data-dark="{{ dark }}"
-  {% endif %}
-  data-size="wide"
->
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  box-shadow: var(--shadow);
 
-  <a href="{{ "/" | relative_url }}" class="home">
-    {% if logo %}
-      <span class="logo">
-        {% if svg %}
-          {{ svg | file_read }}
-        {% else %}
-          <img src="{{ logo | relative_url }}" alt="logo">
-        {% endif %}
-      </span>
-    {% endif %}
+  @if $sticky {
+    position: sticky !important;
+    top: 0;
+    z-index: 10 !important;
+  }
+}
 
-    {% if site.logo-text != false %}
-      <span class="title-text">
-        {% if site.title and site.show-title != false %}
-          <span class="title">{{ site.title }}</span>
-        {% endif %}
-        {% if site.subtitle and site.show-subtitle != false %}
-          <span class="subtitle">{{ site.subtitle }}</span>
-        {% endif %}
-      </span>
-    {% endif %}
-  </a>
+header a {
+  color: var(--text);
+  text-decoration: none;
+}
 
-  <input class="nav-toggle" type="checkbox" aria-label="show/hide nav">
+.home {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+}
 
-  <nav>
-    {% assign pages = site.pages
-      | where_exp: "page", "page.nav"
-      | sort: "nav.order"
-    %}
-    {% for page in pages %}
-      {% if page.nav %}
-        {% assign current = page.url | replace:'index.html','' %}
-        {% assign target = page.dir | relative_url %}
+.title-text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 5px;
+  min-width: 0;
+  font-family: var(--title);
+  text-align: left;
+}
 
-        <a
-          href="{{ target }}"
-          class="nav-link"
-          {% if current == target %}
-            aria-current="page"
-          {% endif %}
-        >
-          {{ page.title }}
-        </a>
-      {% endif %}
-    {% endfor %}
-  </nav>
+.title {
+  font-size: var(--title);
+  line-height: 1.1;
+  font-weight: 600;
+}
 
-</header>
+@media (max-width: 768px) {
+  header .title {
+    text-wrap: balance;
+  }
+}
+
+.subtitle {
+  opacity: 0.65;
+  font-weight: var(--thin);
+}
+
+/* -------------------------------------------------
+   Mobile nav toggle (hamburger) — robust on iOS/Safari
+-------------------------------------------------- */
+.nav-toggle {
+  display: none;                 /* hidden on desktop */
+  width: 34px;
+  height: 34px;
+  margin: 0;
+  padding: 0;
+
+  appearance: none;
+  -webkit-appearance: none;      /* IMPORTANT for mobile Safari */
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+
+  position: relative;
+}
+
+.nav-toggle::after {
+  content: "\f0c9";              /* hamburger */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 1;
+  color: var(--text);
+}
+
+.nav-toggle:checked::after {
+  content: "\f00d";              /* X */
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-family: var(--heading);
+  text-transform: uppercase;
+}
+
+nav > a {
+  padding: 5px;
+}
+
+nav > a:hover {
+  color: var(--primary);
+}
+
+/* -------------------------------------------------
+   Unconditional mobile collapse rules (no data-big)
+-------------------------------------------------- */
+@media (max-width: $collapse) {
+  header {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* show hamburger on mobile */
+  .nav-toggle {
+    display: block;
+    margin-left: auto;
+  }
+
+  /* hide nav unless hamburger checked */
+  .nav-toggle:not(:checked) + nav {
+    display: none !important;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    gap: 12px;
+    padding-top: 10px;
+  }
+}
+
+/* -------------------------------------------------
+   (Optional legacy big-header rules)
+   Keep if you might re-enable a big homepage later.
+-------------------------------------------------- */
+header[data-big] {
+  justify-content: space-between;
+  align-items: end;
+  flex-direction: row;
+
+  @if $sticky {
+    top: unset;
+  }
+
+  .home {
+    flex-direction: row;
+    flex-grow: 1;
+  }
+
+  .title-text {
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+    text-wrap: wrap;
+    margin-top: 100px;
+  }
+
+  .title {
+    font-size: 4rem;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+    text-wrap: wrap;
+  }
+}
+
+/* -------------------------------------------------
+   Active tab underline
+-------------------------------------------------- */
+header nav a.nav-link {
+  position: relative;
+  text-decoration: none;
+}
+
+header nav a.nav-link[aria-current="page"]::after {
+  content: "";
+  position: absolute;
+  left: 6%;
+  right: 6%;
+  bottom: 5px;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.95;
+  border-radius: 2px;
+}
