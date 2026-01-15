@@ -10,6 +10,10 @@ res-prof:
   #icon: fa-solid fa-hat-wizard
   description: Research Assistant Professor
 
+res-assoc:
+  #icon: fa-solid fa-hat-wizard
+  description: Research Associate  
+
 postdoc:
   #icon: fa-solid fa-glasses
   description: Postdoctoral Researcher
