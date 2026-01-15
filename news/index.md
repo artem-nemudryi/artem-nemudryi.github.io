@@ -62,8 +62,22 @@ The Nemudryi Lab celebrates its one-year anniversary! 🎉
 <hr>
 **August 13, 2025**
 <br>
-Veronica Perez Taboada receives a competitive T32 fellowship in the [UF Genetics Training Program](https://ufgi.ufl.edu/genetics-training-program-t32/). 
+
+<div class="text-img">
+
+  <div class="image">
+    <img src="/news/images/2025_VPT_T32.jpg" alt="First preprint">
+  </div>
+ 
+ <div class="text"> 
+ 
+Veronica Perez Taboada receives T32 fellowship in the UF Genetics Training Program. 
 <br>🎉 <strong>Congratulations, Veronica! </strong>🎉
+
+</div>
+
+</div>
+
 
 <hr>
 **July 24, 2025**
