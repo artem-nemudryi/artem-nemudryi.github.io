@@ -76,4 +76,24 @@
   top: -2px;
 }
 
+/* Smooth hover interaction for member portraits */
+.portrait {
+  transition: transform 260ms ease, box-shadow 260ms ease;
+}
+
+.portrait-image {
+  transition: transform 260ms ease;
+}
+
+/* Hover / focus effect */
+.portrait:hover .portrait-image,
+.portrait:focus-within .portrait-image {
+  transform: scale(1.05); /* zoom in slightly */
+}
+
+.portrait:hover,
+.portrait:focus-within {
+  transform: translateY(-4px); /* subtle lift */
+}
+
 /*# sourceMappingURL=portrait.css.map */
