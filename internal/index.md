@@ -1,7 +1,111 @@
 ---
-title: internal
-nav:
-  order: 6
-  tooltip: Lab members only
+layout: null
+permalink: /internal/
 ---
-Coming soon...
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lab Internal</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #f8fafc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .card {
+      background: white;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      text-align: center;
+      width: 320px;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 12px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      font-size: 16px;
+    }
+    button {
+      margin-top: 16px;
+      padding: 10px 20px;
+      border-radius: 8px;
+      border: none;
+      background: #1f2937;
+      color: white;
+      font-size: 15px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #374151;
+    }
+    .error {
+      color: #b91c1c;
+      margin-top: 10px;
+      display: none;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+
+
+<div class="card">
+
+<svg width="72" height="72" viewBox="0 0 64 64" fill="none" stroke="#6b7280" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+      <!-- head -->
+      <polygon points="32 4 48 14 48 34 32 44 16 34 16 14"></polygon>
+      <!-- tail -->
+      <line x1="32" y1="44" x2="32" y2="56"></line>
+      <!-- legs -->
+      <line x1="32" y1="56" x2="20" y2="62"></line>
+      <line x1="32" y1="56" x2="44" y2="62"></line>
+    </svg>
+
+  <h2>Internal lab resources</h2>
+
+  <input type="password" id="password" placeholder="Password">
+  <button onclick="checkPassword()">Enter</button>
+  <div class="error" id="error">Incorrect password</div>
+</div>
+
+<script>
+const passwordHash = "d1b01341ffa951faf8d8ab28dbcda405bd4cac00434fe775d3b5f6e618b44cc5";
+
+async function sha256(message) {
+  const msgBuffer = new TextEncoder().encode(message);
+  const hashBuffer = await crypto.subtle.digest("SHA-256", msgBuffer);
+  const hashArray = Array.from(new Uint8Array(hashBuffer));
+  return hashArray.map(b => b.toString(16).padStart(2, "0")).join("");
+}
+
+async function checkPassword() {
+  const entered = document.getElementById("password").value;
+  const enteredHash = await sha256(entered);
+
+  if (enteredHash === passwordHash) {
+    localStorage.setItem("lab_internal_auth", "true");
+    window.location.href = "/internal/home/";
+  } else {
+    document.getElementById("error").style.display = "block";
+  }
+}
+
+if (localStorage.getItem("lab_internal_auth") === "true") {
+  window.location.href = "/internal/home/";
+}
+</script>
+
+</body>
+</html>
