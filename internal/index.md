@@ -74,7 +74,9 @@ permalink: /internal/
     </svg>
 
   <h2>Internal lab resources</h2>
-
+<p style="opacity:0.1; font-size:14px; margin-top:8px;">
+  Hint: programmable bacterial immunity + the current year.
+</p>
   <input type="password" id="password" placeholder="Password">
   <button onclick="checkPassword()">Enter</button>
   <div class="error" id="error">Incorrect password</div>
