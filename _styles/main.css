@@ -71,7 +71,7 @@ html.is-animating .transition-fade {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background: rgba(0, 0, 0, 0.03); /* optional but nice */
+  background: rgba(255, 255, 255, 0); /* optional but nice */
 }
 
 .app-tile__thumb img {
