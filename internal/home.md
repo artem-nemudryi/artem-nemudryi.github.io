@@ -20,7 +20,13 @@ if (localStorage.getItem("lab_internal_auth") !== "true") {
     </div>
     <div class="app-tile__title">qPCR planner</div>
   </a>
-
+  
+ <a class="app-tile" href="https://plate-planner-nemudryi-lab.vercel.app">
+    <div class="app-tile__thumb">
+      <img src="{{ '/internal/app_icons/plate_planner.png' | relative_url }}" alt="plate icon">
+    </div>
+    <div class="app-tile__title">Plate planner</div>
+  </a>
 
  <a class="app-tile" href="https://genomic-diagrams-nemudryi-lab.streamlit.app">
     <div class="app-tile__thumb">
