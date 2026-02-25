@@ -37,7 +37,8 @@ if (localStorage.getItem("lab_internal_auth") !== "true") {
 
 </div>
 
-<button onclick="logout()" style="margin-top:20px;">Logout</button>
+
+<button onclick="logout()" style="margin-top:20px; font-size:18px;" >Logout</button>
 
 <script>
 function logout() {
@@ -45,3 +46,19 @@ function logout() {
   window.location.href = "/internal/";
 }
 </script>
+
+<div class="iframe-container">
+
+<iframe 
+  data-testid="embed-iframe"
+  style="border-radius:12px; margin: 50px;"
+  width="560" 
+  height="315" 
+  src="https://www.youtube.com/embed/PDtcKVkyJPY?autoplay=1&mute=0&loop=1&playlist=PDtcKVkyJPY"
+  title="YouTube video player" 
+  frameborder="0" 
+  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
+  allowfullscreen>
+</iframe>
+</div>
+
