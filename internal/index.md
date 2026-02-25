@@ -60,8 +60,8 @@ permalink: /internal/
 <body>
 
 
-
 <div class="card">
+
 
 <svg width="72" height="72" viewBox="0 0 64 64" fill="none" stroke="#6b7280" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
       <!-- head -->
@@ -78,7 +78,8 @@ permalink: /internal/
   <input type="password" id="password" placeholder="Password">
   <button onclick="checkPassword()">Enter</button>
   <div class="error" id="error">Incorrect password</div>
-  <p class="back-home">
+
+<p class="back-home">
   <a href="/">← Back to Home</a>
 </p>
 </div>
