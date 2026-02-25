@@ -1,5 +1,5 @@
 ---
-title: internal
+permalink: /internal/home/
 ---
 
 <script>
