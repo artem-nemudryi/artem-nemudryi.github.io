@@ -1,1 +1,1 @@
-Sitemap: https://nemudryi-lab.com/sitemap.xml
+Sitemap: http://nemudryi-lab.com/sitemap.xml
