@@ -37,7 +37,7 @@ if (localStorage.getItem("lab_internal_auth") !== "true") {
 
    <a class="app-tile" href="https://ecoli-calc-nemudryi-lab.vercel.app/">
     <div class="app-tile__thumb">
-      <img src="{{ '/internal/app_icons/gene_diagrams.png' | relative_url }}" alt="Ecoli calculator">
+      <img src="{{ '/internal/app_icons/ecoli-calc.png' | relative_url }}" alt="Ecoli calculator">
     </div>
     <div class="app-tile__title">OD600 and MOI calculator</div>
   </a>
