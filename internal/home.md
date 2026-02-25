@@ -35,6 +35,13 @@ if (localStorage.getItem("lab_internal_auth") !== "true") {
     <div class="app-tile__title">Gene Diagrams</div>
   </a>
 
+   <a class="app-tile" href="https://ecoli-calc-nemudryi-lab.vercel.app/">
+    <div class="app-tile__thumb">
+      <img src="{{ '/internal/app_icons/gene_diagrams.png' | relative_url }}" alt="96-well plate icon">
+    </div>
+    <div class="app-tile__title">OD600 and MOI calculator</div>
+  </a>
+
 </div>
 
 
