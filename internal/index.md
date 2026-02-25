@@ -78,6 +78,9 @@ permalink: /internal/
   <input type="password" id="password" placeholder="Password">
   <button onclick="checkPassword()">Enter</button>
   <div class="error" id="error">Incorrect password</div>
+  <p class="back-home">
+  <a href="/">← Back to Home</a>
+</p>
 </div>
 
 <script>
