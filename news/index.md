@@ -7,6 +7,21 @@ nav:
 <!-- # What’s new in the Lab? {% include icon.html icon="fa-solid fa-feather-pointed" %} -->
 <hr>
 
+**March, 2026**
+<div class="text-img">
+
+  <div class="image">
+    <img src="/news/images/VPT_ASBMB2026_v4.jpg" alt="ASBMB2026">
+  </div>
+ 
+ <div class="text"> 
+Veronica presents her poster at ASBMB2026!
+</div>
+
+</div>
+
+<hr>
+
 **October, 2025**
 <div class="text-img">
 
