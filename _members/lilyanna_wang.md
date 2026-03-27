@@ -1,7 +1,7 @@
 ---
 name: Lilyanna 'Lily' Wang
 image: member_headshots/lilyanna_wang.jpg
-role: undergrad
+role: undergrad_usp
 aliases:
   - Lilyanna Wang
   - Wang, Lilyanna
