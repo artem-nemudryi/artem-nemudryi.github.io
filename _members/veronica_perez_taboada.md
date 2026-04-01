@@ -1,6 +1,6 @@
 ---
 name: Veronica Perez Taboada
-image: member_headshots/veronica_perez_taboada.jpg
+image: member_headshots/VPT_IMG_8965.jpg
 role: gtp-t32-phd
 aliases:
   - Veronica Perez Taboada
