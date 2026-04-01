@@ -5,10 +5,10 @@
       text: First manuscript from the Nemudryi lab!  
 
 - id: doi:10.1093/molbev/msae061
-  image: https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/mbe/41/4/10.1093_molbev_msae061/5/m_msae061f1.jpeg?Expires=1756161567&Signature=lBwxBnQz15ZhNt8ct~qKdigQ3rOugrF1VocNOLWib2CArzSV1rHkTo1s0xC79r3Zx33sy5bHIvgh-EVbezFbPjZXdhlYzGAoGfc4~YhBpkLF4jYkEakZ9g~axbNGkUEjgkJwVxp6~CtLvhLaUVSt-xeF4fXmhcb317U0Obp38vZOxS2oKlTp7FDA3zCsdJlyyE-PSnZ-6udmYgO-ICx0liDfaRUEdcO43pDkkXAtHnKqnYhKY51KqXR0W3pPMbBADK-z3R89lGTH8OYwq~VfNFznHIWpM7jvSp0K~6Yu~MeSr93if9Y5HRVtnrbLJ4LkLC0KKZAA2jOTpTOFoHXbLA__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA
-
+  image: images/msae061f1.jpeg
+  
 - id: doi:10.1126/science.adk5518
-  image: https://www.science.org/cms/10.1126/science.adk5518/asset/aeaafbdb-8044-46ac-a2ce-883732b65a5a/assets/images/large/science.adk5518-f5.jpg
+  image: images/science.adk5518-f5.jpg
   buttons:
     - type: video
       text: Genome Engineering Seminar Series, Harvard Medical School
