@@ -22,7 +22,7 @@ Prokaryotic Schlafens (pSchlafen) act as tRNA-targeting anti-phage effectors tha
   text=text
   flip = true
 %}
-
+<hr>
 <h2>Targeting RNA with CRISPR</h2>
 {% capture text %}
 How do cells cope with RNA damage? The prevailing view is that defective RNA is cleared and replaced as the new RNA is transcribed. **Why repair RNA if cells can re-synthesize it?**
