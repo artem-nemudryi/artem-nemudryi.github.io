@@ -324,5 +324,8 @@
   date: '2026-03-09'
   link: https://doi.org/hbsjg9
   image: images/natmicro_vpt_et_al_2026_fig6.png
+  buttons:
+  - type: media
+    text: First manuscript from the Nemudryi lab!
   plugin: sources.py
   file: sources.yaml
