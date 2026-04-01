@@ -310,8 +310,8 @@
   plugin: sources.py
   file: sources.yaml
   image: https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41594-018-0173-y/MediaObjects/41594_2018_173_Fig3_HTML.png?as=webp
-- id: doi:10.1101/2025.07.24.666596
-  title: Bacterial Schlafens mediate anti-phage defense
+- id: doi:10.1038/s41564-026-02277-8
+  title: Bacterial Schlafen proteins mediate phage defence
   authors:
   - Veronica Perez Taboada
   - Yimo Wu
@@ -320,9 +320,9 @@
   - Luuk Loeff
   - Anna Nemudraia
   - Artem Nemudryi
-  publisher: bioRxiv
-  date: '2025-07-24'
-  link: https://doi.org/g9wdht
-  image: images/VPT_et_al_2025_preprin_fig6.png
+  publisher: Nature Microbiology
+  date: '2026-03-09'
+  link: https://doi.org/hbsjg9
+  image: images/natmicro_vpt_et_al_2026_fig6.png
   plugin: sources.py
   file: sources.yaml
