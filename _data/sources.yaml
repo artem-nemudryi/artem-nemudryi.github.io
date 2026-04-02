@@ -1,8 +1,5 @@
 - id: doi:10.1038/s41564-026-02277-8
   image: images/natmicro_vpt_et_al_2026_fig6.png
-  buttons:
-    - type: media 
-      text: First manuscript from the Nemudryi lab!  
 
 - id: doi:10.1093/molbev/msae061
   image: images/msae061f1.jpeg
