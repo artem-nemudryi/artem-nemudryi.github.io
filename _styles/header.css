@@ -110,6 +110,9 @@ nav > a:hover {
     padding: 20px 24px;
     flex-wrap: wrap;
   }
+  .title {
+    font-size: 1.5rem;
+  }
   .nav-toggle {
     display: block;
     margin-left: auto;
