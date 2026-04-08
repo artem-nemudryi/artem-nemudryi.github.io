@@ -1,70 +1,67 @@
-@charset "UTF-8";
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding: 20px;
-  box-shadow: var(--shadow);
+  gap: 24px;
+  padding: 28px 48px;
+  background: white;
+  border-bottom: 2px solid #e8e8e8;
+  box-shadow: none;
   position: sticky !important;
   top: 0;
   z-index: 10 !important;
 }
 
 header a {
-  color: var(--text);
+  color: #222;
   text-decoration: none;
 }
 
 .home {
   display: flex;
-  justify-content: flex-start;
   align-items: center;
-  gap: 10px;
-  flex-basis: 0;
-  flex-grow: 1;
-  max-width: 100%;
+  gap: 0;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.logo img,
+.logo svg {
+  display: block;
+  height: 64px;
+  width: auto;
+  padding: 0px 12px;
 }
 
 .title-text {
   display: flex;
-  justify-content: flex-start;
   align-items: baseline;
-  flex-wrap: wrap;
-  gap: 5px;
+  gap: 0;
   min-width: 0;
   font-family: var(--title);
   text-align: left;
 }
 
 .title {
-  font-size: var(--title);
+  font-size: 3rem;
   line-height: 1.1;
-  font-weight: 600;
+  font-weight: 500;
+  letter-spacing: 0;
 }
 
-@media (max-width: 768px) {
-  header .title {
-    text-wrap: balance;
-  }
-}
 .subtitle {
-  opacity: 0.65;
-  font-weight: var(--thin);
+  display: none;
 }
 
-/* -------------------------------------------------
-   Mobile nav toggle (hamburger) — robust on iOS/Safari
--------------------------------------------------- */
+/* Mobile nav toggle */
 .nav-toggle {
-  display: none; /* hidden on desktop */
+  display: none;
   width: 34px;
   height: 34px;
   margin: 0;
   padding: 0;
   appearance: none;
-  -webkit-appearance: none; /* IMPORTANT for mobile Safari */
+  -webkit-appearance: none;
   border: 0;
   background: transparent;
   cursor: pointer;
@@ -72,7 +69,7 @@ header a {
 }
 
 .nav-toggle::after {
-  content: "\f0c9"; /* hamburger */
+  content: "\f0c9";
   position: absolute;
   left: 50%;
   top: 50%;
@@ -81,104 +78,67 @@ header a {
   font-weight: 900;
   font-size: 18px;
   line-height: 1;
-  color: var(--text);
+  color: #222;
 }
 
 .nav-toggle:checked::after {
-  content: "\f00d"; /* X */
+  content: "\f00d";
 }
 
 nav {
   display: flex;
-  justify-content: center;
-  align-items: end;
-  flex-wrap: wrap;
-  gap: 10px;
+  align-items: center;
+  gap: 28px;
   font-family: var(--heading);
-  text-transform: uppercase;
+  text-transform: none;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 nav > a {
-  padding: 5px;
+  padding: 4px 0;
+  color: #222;
 }
 
 nav > a:hover {
-  color: var(--primary);
+  color: #000;
 }
 
-/* -------------------------------------------------
-   Unconditional mobile collapse rules (no data-big)
--------------------------------------------------- */
+/* Mobile */
 @media (max-width: 700px) {
   header {
-    justify-content: space-between;
-    align-items: center;
+    padding: 20px 24px;
+    flex-wrap: wrap;
   }
-  /* show hamburger on mobile */
   .nav-toggle {
     display: block;
     margin-left: auto;
   }
-  /* hide nav unless hamburger checked */
   .nav-toggle:not(:checked) + nav {
     display: none !important;
   }
   nav {
-    display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
     width: 100%;
-    gap: 12px;
-    padding-top: 10px;
+    gap: 14px;
+    padding-top: 12px;
   }
 }
-/* -------------------------------------------------
-   (Optional legacy big-header rules)
-   Keep if you might re-enable a big homepage later.
--------------------------------------------------- */
-header[data-big] {
-  justify-content: space-between;
-  align-items: end;
-  flex-direction: row;
-  top: unset;
-}
-header[data-big] .home {
-  flex-direction: row;
-  flex-grow: 1;
-}
-header[data-big] .title-text {
-  flex-direction: column;
-  align-items: start;
-  text-align: left;
-  text-wrap: wrap;
-  margin-top: 100px;
-}
-header[data-big] .title {
-  font-size: 4rem;
-}
-header[data-big] .subtitle {
-  font-size: 1.5rem;
-  text-wrap: wrap;
-}
-
-/* -------------------------------------------------
-   Active tab underline
--------------------------------------------------- */
+/* Active page marker: subtle underline */
 header nav a.nav-link {
   position: relative;
-  text-decoration: none;
 }
 
 header nav a.nav-link[aria-current=page]::after {
   content: "";
   position: absolute;
-  left: 6%;
-  right: 6%;
-  bottom: 5px;
+  left: 0;
+  right: 0;
+  bottom: -6px;
   height: 1px;
   background: currentColor;
-  opacity: 0.95;
-  border-radius: 2px;
+  opacity: 0.7;
 }
 
 /*# sourceMappingURL=header.css.map */
