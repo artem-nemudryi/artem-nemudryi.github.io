@@ -11,7 +11,7 @@ main {
 .transition-fade {
   opacity: 1;
   transform: translateY(0);
-  transition: opacity 500ms ease, transform 500ms ease;
+  transition: opacity 400ms ease, transform 400ms ease;
   will-change: opacity, transform;
 }
 
@@ -92,6 +92,91 @@ html.is-animating .transition-fade {
   font-size: 0.88rem;
   opacity: 0.75;
   line-height: 1.2;
+}
+
+.home-hero {
+  max-width: 1000px;
+  margin: 40px auto 40px;
+  padding: 0 32px;
+}
+
+.home-hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.home-intro {
+  max-width: 1000px;
+  margin: 0 auto 40px;
+  padding: 0 12px;
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.home-intro-label h2 {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #B34646;
+}
+
+.home-intro-text {
+  max-width: 1000px;
+}
+
+.home-intro-text .lead {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 1.5rem;
+  line-height: 1.35;
+  color: #222;
+}
+
+.home-intro-text p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #222;
+}
+
+.home-links {
+  margin-top: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.home-links a {
+  color: #222;
+  text-decoration: none;
+  border-bottom: 1px solid #bdbdbd;
+}
+
+.home-links a:hover {
+  border-color: #222;
+}
+
+@media (max-width: 800px) {
+  .home-hero {
+    padding: 0 20px;
+    margin: 24px auto 40px;
+  }
+  .home-intro {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 20px;
+  }
+  .home-intro-label h2 {
+    font-size: 1.8rem;
+  }
+  .home-intro-text .lead {
+    font-size: 1.25rem;
+  }
+  .home-intro-text p {
+    font-size: 1.05rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
