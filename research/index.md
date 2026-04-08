@@ -9,7 +9,7 @@ nav:
 {% capture text %}
 Bacteriophages, viruses that infect bacteria, outnumber their hosts tenfold. The fierce selective pressure from phage predation has driven bacteria to evolve a vast variety of defense mechanisms. **The molecular mechanisms for most of these immune systems remain unknown, and many more systems remain to be discovered.**
 
-Our recent work demonstrated a direct evolutionary link between tRNA-targeting antiviral effectors in bacteria and humans, highlighting the remarkable conservation of viral defense across domains of life. We found that homologs of human antiviral Schlafen tRNases protect bacteria from phage (Perez Taboada *et al.*, *Nature Microbiology*, *in press*).
+Our recent work demonstrated a direct evolutionary link between tRNA-targeting antiviral effectors in bacteria and humans, highlighting the remarkable conservation of viral defense across domains of life. We found that homologs of human antiviral Schlafen tRNases protect bacteria from phage (Perez Taboada *et al.*, *Nature Microbiology*, 2026).
 
 Prokaryotic Schlafens (pSchlafen) act as tRNA-targeting anti-phage effectors that are fused to a variety of phage sensors. We aim to understand how diverse pSchlafen proteins sense phage infection and determine the molecular mechanisms of phage defense.
 
