@@ -2,9 +2,47 @@
 title: News
 nav:
   order: 4
-  tooltip: What's good?
+  tooltip: What's good
 ---
-<!-- # What’s new in the Lab? {% include icon.html icon="fa-solid fa-feather-pointed" %} -->
+
+**April 9th, 2026**
+<div class="text-img">
+
+  <div class="image">
+    <img src="/news/images/20260409_UFBMB_undergrad.JPG" alt="UF BMB undergrad symposium">
+  </div>
+ 
+ <div class="text"> 
+<strong> Riley and Yimo presented posters at UF BMB Undergraduate Symposium!</strong> 
+<br>Fantastic job, you two! Congrats Yimo on the 3rd Place Poster Award!
+
+</div>
+
+</div>
+
+<hr>
+
+**March 13th, 2026**
+<div class="text-img">
+
+  <div class="image">
+    <img src="/news/images/Cover Option-03.jpg" alt="Bacterial Schlafen proteins protect bacteria from phage">
+  </div>
+ 
+ <div class="text"> 
+<strong>First paper from the lab is out at <i>Nature Microbiology</i>. </strong>
+
+<br><a href="https://doi.org/10.1038/s41564-026-02277-8" target="_blank" rel="noopener noreferrer">
+      Link to the paper</a>. Congrats to all authors, and lets keep rocking!
+
+<br><br>Special thanks to <a href="https://www.lizsiskillustration.com/sciillportfolio" target="_blank" rel="noopener noreferrer">
+      Liz Sisk</a> for the amazing art work.
+
+</div>
+
+</div>
+
+
 <hr>
 
 **March, 2026**
@@ -15,7 +53,7 @@ nav:
   </div>
  
  <div class="text"> 
-Veronica presents her poster at ASBMB2026!
+Veronica presented her poster at ASBMB2026!
 </div>
 
 </div>
@@ -92,7 +130,6 @@ Veronica Perez Taboada receives T32 fellowship in the UF Genetics Training Progr
 </div>
 
 </div>
-
 
 <hr>
 **July 24, 2025**
