@@ -1,5 +1,12 @@
 - id: doi:10.1038/s41564-026-02277-8
   image: images/natmicro_vpt_et_al_2026_fig6.png
+    buttons:
+    - type: media
+      text: Brothers in Arms, <em>Science</em> news feature
+      link: https://www.science.org/doi/epdf/10.1126/science.aej0180
+    - type: media
+      text: Department of Biochemistry and Molecular Biology lab discovers a link between bacterial and human immunity
+      link: https://research.med.ufl.edu/2026/08/11/department-of-biochemistry-and-molecular-biology-lab-discovers-a-link-between-bacterial-and-human-immunity/
 
 - id: doi:10.1093/molbev/msae061
   image: images/msae061f1.jpeg
