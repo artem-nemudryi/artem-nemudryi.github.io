@@ -1,6 +1,6 @@
 - id: doi:10.1038/s41564-026-02277-8
   image: images/natmicro_vpt_et_al_2026_fig6.png
-    buttons:
+  buttons:
     - type: media
       text: Brothers in Arms, <em>Science</em> news feature
       link: https://www.science.org/doi/epdf/10.1126/science.aej0180
