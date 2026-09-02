@@ -22,6 +22,10 @@ phd:
   #icon: fa-solid fa-lightbulb
   description: PhD Student
 
+master:
+  #icon: fa-solid fa-lightbulb
+  description: Master&#39;s Student
+
 gtp-t32-phd:
   #icon: fa-solid fa-lightbulb
   description: PhD Student<br>T32 GTP Fellow
