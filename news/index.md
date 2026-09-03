@@ -14,7 +14,7 @@ nav:
  
  <div class="text"> 
 <strong> NIH MIRA awarded!</strong> 
-<br>Our work on the mechanisms of Schlafen phage defense received support from NIH NIGMS Maximizing Investigators’ Research Award (MIRA)!
+<br>Our research on Schlafen phage defense received support from NIH NIGMS Maximizing Investigators’ Research Award (MIRA)!
 
 </div>
 
