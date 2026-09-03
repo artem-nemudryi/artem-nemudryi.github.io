@@ -5,6 +5,23 @@ nav:
   tooltip: What's good
 ---
 
+**September 2026**
+<div class="text-img">
+
+  <div class="image">
+    <img src="/news/images/cat-cat-meme.gif" alt="Research Funded!">
+  </div>
+ 
+ <div class="text"> 
+<strong>  — NIH MIRA awarded!</strong> 
+<br>Our work on the mechanisms of Schlafen phage defense received support from NIH NIGMS Maximizing Investigators’ Research Award (MIRA)!
+
+</div>
+
+</div>
+
+<hr>
+
 **April 9th, 2026**
 <div class="text-img">
 
