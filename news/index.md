@@ -8,9 +8,11 @@ nav:
 **September 2026**
 <div class="text-img">
 
-  <div class="tenor-gif-embed" data-postid="22346803" data-share-method="host" data-aspect-ratio="1.33333" data-width="100%"><a href="https://tenor.com/view/oakley-sciencedog-oakleyscience-gif-22346803">Oakley Sciencedog GIF</a>from <a href="https://tenor.com/search/oakley-gifs">Oakley GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+  <div class="image">
+    <img src="/news/images/oakley-sciencedog.gif" alt="<a href="https://tenor.com/view/oakley-sciencedog-oakleyscience-gif-22346803">Oakley Sciencedog GIF</a>from <a href="https://tenor.com/search/oakley-gifs">Oakley GIFs</a>">
+  </div>
  
- <div class="text"> 
+<div class="text"> 
 <strong> NIH MIRA awarded!</strong> 
 <br>Our research on Schlafen phage defense received support from NIH NIGMS Maximizing Investigators’ Research Award (MIRA)!
 
