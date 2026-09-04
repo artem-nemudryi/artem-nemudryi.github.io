@@ -8,27 +8,26 @@ nav:
 **September 2026**
 <div class="text-img">
 
-<div class="image">
-  <div class="tenor-gif-embed"
-       data-postid="22346803"
-       data-share-method="host"
-       data-aspect-ratio="1.33333"
-       data-width="100%">
-    <a href="https://tenor.com/view/oakley-sciencedog-oakleyscience-gif-22346803">
-      Oakley Sciencedog GIF
-    </a>
-    from
-    <a href="https://tenor.com/search/oakley-gifs">
-      Oakley GIFs
-    </a>
+  <div class="image">
+    <div class="tenor-gif-embed"
+         data-postid="22346803"
+         data-share-method="host"
+         data-aspect-ratio="1.33333"
+         data-width="100%">
+      <a href="https://tenor.com/view/oakley-sciencedog-oakleyscience-gif-22346803">
+        Oakley Sciencedog GIF
+      </a>
+      from
+      <a href="https://tenor.com/search/oakley-gifs">
+        Oakley GIFs
+      </a>
+    </div>
   </div>
-</div>
- 
-<div class="text"> 
-<strong> NIH MIRA awarded!</strong> 
-<br>Our research on Schlafen phage defense received support from NIH NIGMS Maximizing Investigators’ Research Award (MIRA)!
 
-</div>
+  <div class="text"> 
+    <strong>NIH MIRA awarded!</strong> 
+    <br>Our research on Schlafen phage defense received support from the NIH NIGMS Maximizing Investigators’ Research Award (MIRA)!
+  </div>
 
 </div>
 
@@ -241,3 +240,5 @@ The Nemudryi Lab officially launches!
 </div>
   
 </div>
+
+<script type="text/javascript" async src="https://tenor.com/embed.js"></script>
