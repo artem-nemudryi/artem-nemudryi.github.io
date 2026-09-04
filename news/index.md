@@ -9,7 +9,7 @@ nav:
 <div class="text-img">
 
   <div class="image">
-    <img src="/news/images/oakley-sciencedog.gif" alt="<a href="https://tenor.com/view/oakley-sciencedog-oakleyscience-gif-22346803">Oakley Sciencedog GIF</a>from <a href="https://tenor.com/search/oakley-gifs">Oakley GIFs</a>">
+    <img src="/news/images/oakley-sciencedog.gif" alt="Oakley Sciencedog GIF from Oakley GIF">
   </div>
  
 <div class="text"> 
