@@ -13,7 +13,7 @@ Our recent work demonstrated a direct evolutionary link between tRNA-targeting a
 
 Prokaryotic Schlafens (pSchlafen) act as tRNA-targeting anti-phage effectors that are fused to a variety of phage sensors. We aim to understand how diverse pSchlafen proteins sense phage infection and determine the molecular mechanisms of phage defense.
 
-This work is supported by the NIH grant <a href="https://reporter.nih.gov/search/bApJd8TvwE6m1Ag_l1Tq8w/project-details/11420190" target="_blank" rel="noopener noreferrer">1R35GM165302-01</a>
+**This work is supported by the NIH grant <a href="https://reporter.nih.gov/search/bApJd8TvwE6m1Ag_l1Tq8w/project-details/11420190" target="_blank" rel="noopener noreferrer">1R35GM165302-01</a>**
 
 {% endcapture %}
 
