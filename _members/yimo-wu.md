@@ -1,6 +1,6 @@
 ---
 name: Yimo 'Mr. Buffer' Wu
-image: member_headshots/yimo_wu_v2.jpeg
+image: member_headshots/yimo_wu_v4.jpeg
 role: undergrad_usp
 aliases:
   - Yimo Wu
