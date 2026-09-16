@@ -11,6 +11,7 @@ nav:
 <!--<hr>-->
 
 {% include list.html data="members" component="portrait" filters="role: res-assoc" %}
+
 {% include list.html data="members" component="portrait" filters="postdoc" %}
 
 {% include list.html data="members" component="portrait" filters="role: phd|rotation-phd" %}
