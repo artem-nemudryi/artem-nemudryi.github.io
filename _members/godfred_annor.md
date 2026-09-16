@@ -1,6 +1,6 @@
 ---
 name: Godfred Annor, PhD
-image: member_headshots/godfred_annor.jpg
+image: member_headshots/godfred_annor_v2.jpg
 role: postdoc
 aliases: Annor, Godfred M.
 
