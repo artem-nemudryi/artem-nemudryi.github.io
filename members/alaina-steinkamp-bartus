@@ -837,6 +837,10 @@ Hello, I’m Alaina! I’m originally from Indianapolis but have been a resident
 </footer>
 
 
+    
+
+
+
     <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
@@ -892,6 +896,33 @@ Hello, I’m Alaina! I’m originally from Indianapolis but have been a resident
         /* ---------- Swup ---------- */
         const swup = new Swup({
           containers: ["#swup"],
+          linkSelector: ['a[href^="/"]', 'a[href^="./"]', 'a[href^="../"]']
+            .map((s) => s + ":not([data-no-swup])")
+            .join(","),
+
+          ignoreVisit: function (url, { el } = {}) {
+            const href = (el && el.getAttribute && el.getAttribute("href")) || url;
+
+            if (href && href.includes("#")) return true;
+            if (href && /\.(pdf|zip|png|jpg|jpeg|gif|svg)$/i.test(href)) return true;
+            if (el && el.hasAttribute && el.hasAttribute("download")) return true;
+            if (el && el.getAttribute && el.getAttribute("target") === "_blank") return true;
+            if (href && /^(mailto:|tel:)/i.test(href)) return true;
+
+            return false;
+          },
+        });
+
+        swup.hooks.on("page:view", () => {
+          initAOS();
+          updateActiveNav();
+          closeMobileNav();
+        });
+
+      })();
+    </script>
+  </body>
+</html>
           linkSelector: ['a[href^="/"]', 'a[href^="./"]', 'a[href^="../"]']
             .map((s) => s + ":not([data-no-swup])")
             .join(","),

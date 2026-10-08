@@ -69,10 +69,10 @@
 
   <meta name="author" content="jane-smith">
   <meta property="og:type" content="article">
-  <meta property="og:updated_time" content="2026-10-08T18:50:27+00:00">
+  <meta property="og:updated_time" content="2026-10-08T18:51:00+00:00">
   <meta property="article:published_time" content="2021-09-30T00:00:00+00:00">
-  <meta property="article:modified_time" content="2026-10-08T18:50:27+00:00">
-  <meta name="revised" content="2026-10-08T18:50:27+00:00">
+  <meta property="article:modified_time" content="2026-10-08T18:51:00+00:00">
+  <meta name="revised" content="2026-10-08T18:51:00+00:00">
 
 
 <script type="application/ld+json">
@@ -82,7 +82,7 @@
       "@type": "BlogPosting",
       "author": { "@type": "Person", "name": "Example post 2" },
       "datePublished": "2021-09-30T00:00:00+00:00",
-      "dateModified": "2026-10-08T18:50:27+00:00",
+      "dateModified": "2026-10-08T18:51:00+00:00",
     
     "name": "Example post 2",
     "description": "",
@@ -624,6 +624,10 @@
 </footer>
 
 
+    
+
+
+
     <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
@@ -705,4 +709,31 @@
       })();
     </script>
   </body>
-</html>
+</html><html><p>
+          linkSelector: ['a[href^="/"]', 'a[href^="./"]', 'a[href^="../"]']
+            .map((s) =&gt; s + ":not([data-no-swup])")
+            .join(","),
+
+          ignoreVisit: function (url, { el } = {}) {
+            const href = (el &amp;&amp; el.getAttribute &amp;&amp; el.getAttribute("href")) || url;
+
+            if (href &amp;&amp; href.includes("#")) return true;
+            if (href &amp;&amp; /\.(pdf|zip|png|jpg|jpeg|gif|svg)$/i.test(href)) return true;
+            if (el &amp;&amp; el.hasAttribute &amp;&amp; el.hasAttribute("download")) return true;
+            if (el &amp;&amp; el.getAttribute &amp;&amp; el.getAttribute("target") === "_blank") return true;
+            if (href &amp;&amp; /^(mailto:|tel:)/i.test(href)) return true;
+
+            return false;
+          },
+        });
+
+        swup.hooks.on("page:view", () =&gt; {
+          initAOS();
+          updateActiveNav();
+          closeMobileNav();
+        });
+
+      })();
+    
+  
+</p></html>
