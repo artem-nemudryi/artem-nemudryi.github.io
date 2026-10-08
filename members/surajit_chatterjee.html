@@ -852,6 +852,35 @@
     </script>
   </body>
 </html><html><p>
+        const swup = new Swup({
+          containers: ["#swup"],
+          linkSelector: ['a[href^="/"]', 'a[href^="./"]', 'a[href^="../"]']
+            .map((s) =&gt; s + ":not([data-no-swup])")
+            .join(","),
+
+          ignoreVisit: function (url, { el } = {}) {
+            const href = (el &amp;&amp; el.getAttribute &amp;&amp; el.getAttribute("href")) || url;
+
+            if (href &amp;&amp; href.includes("#")) return true;
+            if (href &amp;&amp; /\.(pdf|zip|png|jpg|jpeg|gif|svg)$/i.test(href)) return true;
+            if (el &amp;&amp; el.hasAttribute &amp;&amp; el.hasAttribute("download")) return true;
+            if (el &amp;&amp; el.getAttribute &amp;&amp; el.getAttribute("target") === "_blank") return true;
+            if (href &amp;&amp; /^(mailto:|tel:)/i.test(href)) return true;
+
+            return false;
+          },
+        });
+
+        swup.hooks.on("page:view", () =&gt; {
+          initAOS();
+          updateActiveNav();
+          closeMobileNav();
+        });
+
+      })();
+    
+  
+</p></html><html><p>
           linkSelector: ['a[href^="/"]', 'a[href^="./"]', 'a[href^="../"]']
             .map((s) =&gt; s + ":not([data-no-swup])")
             .join(","),
