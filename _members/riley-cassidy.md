@@ -22,7 +22,6 @@ I am from South Florida and currently on a Pre-Med track, majoring in Microbiolo
 **Song I have on repeat:** Twist and Shout by The Beatles<br>
 **Favorite lab technique:** EOP assays<br>
 <br>
-<br>
 **Support:** [College of Medicine University Scholar](https://universityscholars.med.ufl.edu/), 2025-2026.
 
 
