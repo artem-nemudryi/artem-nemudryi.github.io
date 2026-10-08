@@ -17,7 +17,7 @@ links:
 ---
 
 Dr. Anna (Anya) Nemudraia earned a Specialist degree from Novosibirsk State University (Russia), graduating summa cum laude in 2012, and a Ph.D. in Molecular Biology from the Institute of Chemical Biology and Fundamental Medicine (Novosibirsk, Russia) in 2017 under the mentorship of Professor Vladimir Richter. Anna completed her postdoctoral training in Blake Wiedenheft’s laboratory, where she studied CRISPR systems and their applications in RNA biology and biotechnology.
-<br>
+<br><br>
 **Favorite movie:** Die Hard<br>
 **Song I have on repeat:** Somebody to Love by Queen<br>
 **Favorite lab technique:** protein purification<br>
