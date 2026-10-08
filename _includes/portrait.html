@@ -16,13 +16,34 @@
     data-style="{{ include.style }}"
     aria-label="{{ member.name | default: "member link" }}"
   >
-    <img
-      src="{{ member.image | relative_url }}"
-      class="portrait-image"
-      alt="member portrait"
-      loading="lazy"
-      {% include fallback.html %}
-    >
+    {% if member.pet_image %}
+      <span class="flip" data-flip>
+        <span class="flip-inner">
+          <img
+            src="{{ member.image | relative_url }}"
+            class="flip-front"
+            alt="member portrait"
+            loading="lazy"
+            {% include fallback.html %}
+          >
+          <img
+            src="{{ member.pet_image | relative_url }}"
+            class="flip-back"
+            alt="{{ member.name | default: "member" }} with their pet"
+            loading="lazy"
+            onerror="this.closest('[data-flip]').removeAttribute('data-flip'); this.remove();"
+          >
+        </span>
+      </span>
+    {% else %}
+      <img
+        src="{{ member.image | relative_url }}"
+        class="portrait-image"
+        alt="member portrait"
+        loading="lazy"
+        {% include fallback.html %}
+      >
+    {% endif %}
 
     {% if member.name or member.role or member.description %}
       <span class="portrait-text">
