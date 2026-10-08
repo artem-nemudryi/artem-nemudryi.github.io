@@ -548,13 +548,13 @@
         
 
         <a
-          href="/news/"
+          href="/publications/"
           class="nav-link"
           
             aria-current="page"
           
         >
-          News
+          Publications
         </a>
       
     
@@ -563,13 +563,13 @@
         
 
         <a
-          href="/publications/"
+          href="/news/"
           class="nav-link"
           
             aria-current="page"
           
         >
-          Publications
+          News
         </a>
       
     
