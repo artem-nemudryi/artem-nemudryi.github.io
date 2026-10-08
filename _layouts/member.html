@@ -4,7 +4,7 @@ layout: default
 
 <h1 style="text-align: center;">{{ page.name | default: page.title  }}</h1>
 
-{%- include member-photo.html image=page.image -%}
+{%- include member-photo.html image=page.image pet_image=page.pet_image name=page.name -%}
 
 {% if member.award %}
   <p class="highlight-line">{{ member.award }}</p>
@@ -13,6 +13,8 @@ layout: default
 <p class="center">
   <h2 style="text-align: center;">{%- include role.html type=page.role text=true description=page.description -%}</h2>
 </p>
+
+
 
 
 {{ content }}
