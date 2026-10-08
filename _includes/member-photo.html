@@ -6,17 +6,47 @@
     class="figure-image"
     aria-label="{{ include.caption | default: "figure link" }}"
   >
-    <img
-      src="{{ include.image | relative_url }}"
-      style="
-        width: {{ include.width | default: "auto" }};
-        max.width: {{ include.width | default: "100%" }};
-        height: {{ include.height | default: "50vh" }};
-      "
-      alt="{{ include.caption | default: "figure image" }}"
-      loading="lazy"
-      {% include fallback.html %}
-    >
+    {% if include.pet_image %}
+      <span
+        class="flip flip-figure"
+        data-flip
+        tabindex="0"
+        role="group"
+        aria-label="Flip photo to see {{ include.name | default: "this member" }} with their pet"
+      >
+        <span class="flip-inner">
+          <img
+            src="{{ include.image | relative_url }}"
+            class="flip-front"
+            style="
+              width: {{ include.width | default: "auto" }};
+              height: {{ include.height | default: "50vh" }};
+            "
+            alt="{{ include.caption | default: "figure image" }}"
+            loading="lazy"
+            {% include fallback.html %}
+          >
+          <img
+            src="{{ include.pet_image | relative_url }}"
+            class="flip-back"
+            alt="{{ include.name | default: "member" }} with their pet"
+            loading="lazy"
+            onerror="this.closest('[data-flip]').removeAttribute('data-flip'); this.remove();"
+          >
+        </span>
+      </span>
+    {% else %}
+      <img
+        src="{{ include.image | relative_url }}"
+        style="
+          width: {{ include.width | default: "auto" }};
+          height: {{ include.height | default: "50vh" }};
+        "
+        alt="{{ include.caption | default: "figure image" }}"
+        loading="lazy"
+        {% include fallback.html %}
+      >
+    {% endif %}
   </a>
   {% if include.caption %}
     <figcaption class="figure-caption">
