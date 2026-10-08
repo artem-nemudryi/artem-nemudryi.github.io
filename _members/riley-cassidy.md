@@ -1,6 +1,6 @@
 ---
 name: Riley 'Phage Queen' Cassidy
-image: member_headshots/riley_cassidy.jpg
+image: member_headshots/riley_cassidy.JPG
 pet_image: member_headshots/riley_cassidy_pet.jpg
 role: undergrad_usp
 aliases:
