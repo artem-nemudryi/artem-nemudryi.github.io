@@ -1,6 +1,7 @@
 ---
 name: Anna Nemudraia, PhD
 image: member_headshots/anna_nemudraia.jpg
+pet_image: member_headshots/anna_nemudraia_pet.jpeg
 role: res-prof
 aliases:
   - Anna Nemudraia
@@ -17,5 +18,9 @@ links:
 
 Dr. Anna (Anya) Nemudraia earned a Specialits degree from Novosibirsk State University (Russia) *summa cum laude* in 2012 and a Ph.D. in Molecular Biology from the Institute of Chemical Biology and Fundamental Medicine (Novosibirsk, Russia) under the mentorship of Professor Vlamidir Richter in 2017.<br><br>
 Anna's postdoctoral work in Blake Wiedenheft's lab resulted in ten publications, including first-author manuscripts in *Science*, *Science Advances*, *Nature Communications*, *Cell Reports*, and *Cell Reports Medicine*. In total, Dr. Nemudraia has co-authored sixteen research papers, and is a co-inventor on four issued patents and four patent applications.
-
+<br>
+**Favorite movie:** Die Hard<br>
+**Song I have on repeat:** Somebody to Love by Queen<br>
+**Favorite lab technique:** protein purification<br>
+<br>
 
