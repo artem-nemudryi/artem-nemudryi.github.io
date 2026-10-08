@@ -1,0 +1,99 @@
+{% comment %}
+  Halloween bats. Turn on/off with `halloween: true|false` in _config.yaml.
+  Also hides itself automatically outside October, so forgetting to turn it off is harmless.
+  Each bat: top position, flight duration, start delay, size, direction (1 = left→right, -1 = right→left).
+{% endcomment %}
+{% if site.halloween %}
+{% assign bats = "12,22,0,48,1|28,30,6,38,-1|8,26,11,32,1|45,34,3,44,-1|18,19,15,30,1|60,28,9,36,1|35,24,18,40,-1" | split: "|" %}
+<div class="bats" aria-hidden="true">
+  {% for b in bats %}
+    {% assign p = b | split: "," %}
+    <div
+      class="bat"
+      style="--top: {{ p[0] }}vh; --dur: {{ p[1] }}s; --delay: -{{ p[2] }}s; --size: {{ p[3] }}px; --dir: {{ p[4] }};"
+    >
+      <div class="bat-bob">
+        <svg viewBox="0 0 100 50" class="bat-svg">
+          <g class="bat-wing bat-wing-left">
+            <path d="M50 22 C 40 8, 22 4, 2 12 C 10 16, 12 22, 10 28 C 18 24, 24 26, 28 32 C 32 26, 40 26, 46 30 Z" />
+          </g>
+          <g class="bat-wing bat-wing-right">
+            <path d="M50 22 C 60 8, 78 4, 98 12 C 90 16, 88 22, 90 28 C 82 24, 76 26, 72 32 C 68 26, 60 26, 54 30 Z" />
+          </g>
+          <ellipse cx="50" cy="27" rx="6" ry="9" />
+          <path d="M45 19 L 46 12 L 49 18 Z M55 19 L 54 12 L 51 18 Z" />
+        </svg>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+<style>
+  .bats {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 999;
+    color: #222;
+  }
+
+  [data-dark="true"] .bats {
+    color: #b9b4c9;
+  }
+
+  .bat {
+    position: absolute;
+    top: var(--top);
+    left: 0;
+    width: var(--size);
+    animation: bat-fly var(--dur) linear var(--delay) infinite;
+  }
+
+  .bat-bob {
+    animation: bat-bob 2.6s ease-in-out infinite alternate;
+  }
+
+  .bat-svg {
+    display: block;
+    width: 100%;
+    fill: currentColor;
+    opacity: 0.85;
+    transform: scaleX(var(--dir));
+  }
+
+  .bat-wing {
+    transform-box: view-box;
+    transform-origin: 50px 24px;
+    animation: bat-flap 0.28s ease-in-out infinite alternate;
+  }
+
+  @keyframes bat-fly {
+    from { transform: translateX(calc(-15vw + (1 - var(--dir)) * 65vw)); }
+    to   { transform: translateX(calc(115vw - (1 - var(--dir)) * 65vw)); }
+  }
+
+  @keyframes bat-bob {
+    from { transform: translateY(-4vh) rotate(-6deg); }
+    to   { transform: translateY(4vh) rotate(6deg); }
+  }
+
+  @keyframes bat-flap {
+    from { transform: scaleY(1); }
+    to   { transform: scaleY(0.35); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .bats { display: none; }
+  }
+</style>
+
+<script>
+  (function () {
+    if (new Date().getMonth() !== 9) {
+      var bats = document.querySelector(".bats");
+      if (bats) bats.remove();
+    }
+  })();
+</script>
+{% endif %}
