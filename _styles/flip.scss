@@ -1,0 +1,92 @@
+---
+---
+
+/* Flip a member photo to reveal a second photo (e.g. with their pet).
+   Only active when a member has `pet_image` set in their front matter. */
+
+.flip {
+  display: inline-block;
+  position: relative;
+  perspective: 800px;
+  outline-offset: 6px;
+}
+
+.flip-inner {
+  position: relative;
+  display: block;
+  transform-style: preserve-3d;
+  transition: transform 600ms cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.flip-front,
+.flip-back {
+  display: block;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-back {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: rotateY(180deg);
+}
+
+/* hover with a mouse, keyboard focus, or tap (focus) on the member page */
+.flip[data-flip]:hover .flip-inner,
+.flip[data-flip]:focus .flip-inner,
+.portrait:focus-visible .flip[data-flip] .flip-inner {
+  transform: rotateY(180deg);
+}
+
+/* team page: round portraits, same look as .portrait-image */
+.portrait .flip {
+  display: block;
+  width: 100%;
+  transition: transform 260ms ease;
+}
+
+.portrait .flip-front,
+.portrait .flip-back {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 999px;
+  object-fit: cover;
+  box-shadow: var(--shadow);
+}
+
+.portrait:hover .flip,
+.portrait:focus-within .flip {
+  transform: scale(1.05);
+}
+
+/* member page: keyboard/tap target */
+.flip-figure {
+  cursor: pointer;
+  border-radius: var(--rounded);
+}
+
+/* no spinning for people who ask for less motion: crossfade instead */
+@media (prefers-reduced-motion: reduce) {
+  .flip-inner,
+  .flip[data-flip]:hover .flip-inner,
+  .flip[data-flip]:focus .flip-inner,
+  .portrait:focus-visible .flip[data-flip] .flip-inner {
+    transform: none;
+    transition: none;
+  }
+
+  .flip-back {
+    transform: none;
+    opacity: 0;
+    transition: opacity 250ms ease;
+  }
+
+  .flip[data-flip]:hover .flip-back,
+  .flip[data-flip]:focus .flip-back,
+  .portrait:focus-visible .flip[data-flip] .flip-back {
+    opacity: 1;
+  }
+}
