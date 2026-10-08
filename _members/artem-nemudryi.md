@@ -26,7 +26,7 @@ I grew up in [Akademgorodok](https://en.wikipedia.org/wiki/Akademgorodok) (Russi
 [Curriculum Vitae](https://drive.google.com/file/d/16j4LPU51VypX7p4Z6nN7fSloRgIdmYMx/view?usp=sharing)
 
 <br>
-**Favorite movie:** The Matrix<br>
-**Song I have on repeat:** The Garden by Pale Jay<br>
-**Favorite lab technique:** Ordering primers<br>
+<strong>Favorite movie:</strong> The Matrix<br>
+<strong>Song I have on repeat:</strong> The Garden by Pale Jay<br>
+<strong>Favorite lab technique:</strong> Ordering primers<br>
 <br>
