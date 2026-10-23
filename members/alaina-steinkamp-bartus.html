@@ -440,10 +440,15 @@
 <figure class="figure">
   <a class="figure-image" aria-label="figure link">
     
-      <img src="/member_headshots/alaina_steinkamp_bartus.png" style="
-          width: auto;
-          height: 50vh;
-        " alt="figure image" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <span class="flip flip-figure" data-flip tabindex="0" role="group" aria-label="Flip photo to see a fun photo of Alaina Steinkamp-Bartus">
+        <span class="flip-inner">
+          <img src="/member_headshots/alaina_steinkamp_bartus.png" class="flip-front" style="
+              width: auto;
+              height: 50vh;
+            " alt="figure image" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+          <img src="/member_headshots/alaina_steinkamp_bartus_fun.jpeg" class="flip-back" alt="Fun photo of Alaina Steinkamp-Bartus" loading="lazy" onerror="this.closest('[data-flip]').removeAttribute('data-flip'); this.remove();">
+        </span>
+      </span>
     
   </a>
   
