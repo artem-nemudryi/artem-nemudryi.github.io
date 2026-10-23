@@ -1,7 +1,7 @@
 ---
 name: Surajit Chatterjee, PhD
 image: member_headshots/surajit_chaterjee.jpeg
-pet_image: member_headshots/surajit_chaterjee_fun.jpg
+fun_image: member_headshots/surajit_chaterjee_fun.jpg
 role: res-assoc
 aliases:
 

@@ -1,7 +1,7 @@
 ---
 name: Anna Nemudraia, PhD
 image: member_headshots/anna_nemudraia.jpg
-pet_image: member_headshots/anna_nemudraia_pet.jpeg
+fun_image: member_headshots/anna_nemudraia_pet.jpeg
 role: res-prof
 aliases:
   - Anna Nemudraia

@@ -1,7 +1,7 @@
 ---
 name: Artem Nemudryi, PhD
 image: member_headshots/artem_nemudryi.JPG
-pet_image: member_headshots/artem_nemudryi_pet.jpg
+fun_image: member_headshots/artem_nemudryi_pet.jpg
 role: pi
 aliases:
   - Artem Nemudryi

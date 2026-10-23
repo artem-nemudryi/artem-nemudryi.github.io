@@ -16,7 +16,7 @@
     data-style="{{ include.style }}"
     aria-label="{{ member.name | default: "member link" }}"
   >
-    {% if member.pet_image %}
+    {% if member.fun_image %}
       <span class="flip" data-flip>
         <span class="flip-inner">
           <img
@@ -27,9 +27,9 @@
             {% include fallback.html %}
           >
           <img
-            src="{{ member.pet_image | relative_url }}"
+            src="{{ member.fun_image | relative_url }}"
             class="flip-back"
-            alt="{{ member.name | default: "member" }} with their pet"
+            alt="Fun photo of {{ member.name | default: "member" }}"
             loading="lazy"
             onerror="this.closest('[data-flip]').removeAttribute('data-flip'); this.remove();"
           >
