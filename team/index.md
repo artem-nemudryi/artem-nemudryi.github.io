@@ -20,13 +20,9 @@ nav:
 {% include list.html data="members" component="portrait" filters="role: intern" %}
 <hr>
 <span style="text-decoration: underline;">**Past members**</span><br>
-**Camden Lerner**, undergraduate student, October 2025 – April 2026<br>
+**Camden Lerner**, undergraduate student, October 2025 – April 2026 (Current - graduate student at Columbia University)<br>
 **Jarret Revels**, Santa Fe College Intern, Fall 2025<br>
 **Samuel Schweitzer**, undergraduate student, October 2024 – December 2025<br>
-**Asher Shinde**, undergraduate student, Summer 2025<br>
-**Jacob Davis**, rotation PhD student, January 2025 – March 2025<br>
-**Nikhil Kumar**, undergraduate student, October 2024 – March 2025<br>
-**Anna Oswald**, undergraduate student, October 2024 – March 2025<br>
 
 <div class="internal-link">
   <a href="/internal/" title="Lab internal">
