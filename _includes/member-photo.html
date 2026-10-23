@@ -6,13 +6,13 @@
     class="figure-image"
     aria-label="{{ include.caption | default: "figure link" }}"
   >
-    {% if include.pet_image %}
+    {% if include.fun_image %}
       <span
         class="flip flip-figure"
         data-flip
         tabindex="0"
         role="group"
-        aria-label="Flip photo to see {{ include.name | default: "this member" }} with their pet"
+        aria-label="Flip photo to see a fun photo of {{ include.name | default: "this member" }}"
       >
         <span class="flip-inner">
           <img
@@ -27,9 +27,9 @@
             {% include fallback.html %}
           >
           <img
-            src="{{ include.pet_image | relative_url }}"
+            src="{{ include.fun_image | relative_url }}"
             class="flip-back"
-            alt="{{ include.name | default: "member" }} with their pet"
+            alt="Fun photo of {{ include.name | default: "member" }}"
             loading="lazy"
             onerror="this.closest('[data-flip]').removeAttribute('data-flip'); this.remove();"
           >
