@@ -1,6 +1,7 @@
 ---
 name: Alaina Steinkamp-Bartus
 image: member_headshots/alaina_steinkamp_bartus.png
+fun_image: member_headshots/alaina_steinkamp_bartus_fun.jpeg
 role: master
 aliases:
   - Steinkamp-Bartus, Alaina
