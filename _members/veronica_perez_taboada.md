@@ -18,6 +18,7 @@ links:
 ---
 
 Hello! I’m Veronica. I was born in Cuba and moved to the U.S. at the age of 13. I earned my B.S. in Biology from Barry University in Miami, FL, in 2024. Currently, I am a graduate student in the Biomedical Sciences (BMS) Ph.D. program here at UF. My research interests focus on uncovering the molecular mechanisms that drive key biological processes. Outside of the lab, I enjoy reading, playing volleyball, and spending time with my family.
+
 <br>
 **Favorite movie:** The Hunger Games<br>
 **Song I have on repeat:** Sing Wherever I Go by We The Kingdom<br>
