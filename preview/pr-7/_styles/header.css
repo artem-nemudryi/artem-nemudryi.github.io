@@ -1,0 +1,147 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  padding: 28px 48px;
+  background: white;
+  border-bottom: 2px solid #e8e8e8;
+  box-shadow: none;
+  position: sticky !important;
+  top: 0;
+  z-index: 10 !important;
+}
+
+header a {
+  color: #222;
+  text-decoration: none;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.logo img,
+.logo svg {
+  display: block;
+  height: 64px;
+  width: auto;
+  padding: 0px 12px;
+}
+
+.title-text {
+  display: flex;
+  align-items: baseline;
+  gap: 0;
+  min-width: 0;
+  font-family: var(--title);
+  text-align: left;
+}
+
+.title {
+  font-size: 3rem;
+  line-height: 1.1;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.subtitle {
+  display: none;
+}
+
+/* Mobile nav toggle */
+.nav-toggle {
+  display: none;
+  width: 34px;
+  height: 34px;
+  margin: 0;
+  padding: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+}
+
+.nav-toggle::after {
+  content: "\f0c9";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 1;
+  color: #222;
+}
+
+.nav-toggle:checked::after {
+  content: "\f00d";
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  font-family: var(--heading);
+  text-transform: none;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+nav > a {
+  padding: 4px 0;
+  color: #222;
+}
+
+nav > a:hover {
+  color: #000;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  header {
+    padding: 20px 24px;
+    flex-wrap: wrap;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .nav-toggle {
+    display: block;
+    margin-left: auto;
+  }
+  .nav-toggle:not(:checked) + nav {
+    display: none !important;
+  }
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 14px;
+    padding-top: 12px;
+  }
+}
+/* Active page marker: subtle underline */
+header nav a.nav-link {
+  position: relative;
+}
+
+header nav a.nav-link[aria-current=page]::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -6px;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.7;
+}
+
+/*# sourceMappingURL=header.css.map */
