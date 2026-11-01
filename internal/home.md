@@ -58,7 +58,7 @@ function logout() {
 </div>
 
 
-# Youtube embed
+
 <div class="iframe-container">
 
 <iframe 
@@ -66,7 +66,7 @@ function logout() {
   style="border-radius:12px; margin: 50px;"
   width="560" 
   height="315" 
-  src="https://www.youtube.com/embed/PDtcKVkyJPY?autoplay=1&mute=0&loop=1&playlist=PDtcKVkyJPY"
+  src="https://youtu.be/zr-Hu3yS9fI?si=JWP1OLEbszncQ6fo" 
   title="YouTube video player" 
   frameborder="0" 
   allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
@@ -74,3 +74,4 @@ function logout() {
 </iframe>
 </div>
 
+<!--"https://www.youtube.com/embed/PDtcKVkyJPY?autoplay=1&mute=0&loop=1&playlist=PDtcKVkyJPY"-->
