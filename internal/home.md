@@ -8,7 +8,6 @@ if (localStorage.getItem("lab_internal_auth") !== "true") {
 }
 </script>
 
-# Logout Button
 <button onclick="logout()" style="margin-top:20px; font-size:18px;" >Logout</button>
 
 <script>
