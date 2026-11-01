@@ -8,6 +8,17 @@ if (localStorage.getItem("lab_internal_auth") !== "true") {
 }
 </script>
 
+# Logout Button
+<button onclick="logout()" style="margin-top:20px; font-size:18px;" >Logout</button>
+
+<script>
+function logout() {
+  localStorage.removeItem("lab_internal_auth");
+  window.location.href = "/internal/";
+}
+</script>
+
+
 # Lab Calendar
 
 <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=America%2FNew_York&showPrint=0&src=Y180MGFmMTFkZDIwYzI2M2UyNjA0YTY1YmNhYTBkNzEwYjY4YmMwMTYyODZkODdiYTQwMDA5MjRhYjg4OGZlNTdlQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23f09300&color=%230b8043" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
@@ -47,15 +58,6 @@ if (localStorage.getItem("lab_internal_auth") !== "true") {
 
 </div>
 
-# Logout Button
-<button onclick="logout()" style="margin-top:20px; font-size:18px;" >Logout</button>
-
-<script>
-function logout() {
-  localStorage.removeItem("lab_internal_auth");
-  window.location.href = "/internal/";
-}
-</script>
 
 # Youtube embed
 <div class="iframe-container">
