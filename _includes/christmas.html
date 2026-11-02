@@ -1,0 +1,77 @@
+{% comment %}
+  Christmas snow. Turn on/off with `christmas: true|false` in _config.yaml.
+  Also hides itself automatically outside December, so leaving it on all year is harmless.
+  Flake positions, sizes and speeds are spread out with simple arithmetic so no two look alike.
+{% endcomment %}
+{% if site.christmas %}
+<div class="snow" aria-hidden="true">
+  {% for i in (1..45) %}
+    {% assign left = i | times: 37 | modulo: 100 %}
+    {% assign size = i | times: 7 | modulo: 5 | plus: 3 %}
+    {% assign dur = i | times: 13 | modulo: 9 | plus: 10 %}
+    {% assign delay = i | times: 17 | modulo: 19 %}
+    {% assign sway = i | times: 11 | modulo: 4 | plus: 2 %}
+    {% assign opacity = i | times: 3 | modulo: 5 | times: 10 | plus: 45 %}
+    <span
+      class="flake"
+      style="--left: {{ left }}vw; --size: {{ size }}px; --dur: {{ dur }}s; --delay: -{{ delay }}s; --sway: {{ sway }}s; --opacity: 0.{{ opacity }};"
+    ><span class="flake-sway"></span></span>
+  {% endfor %}
+</div>
+
+<style>
+  .snow {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 999;
+    color: #a9bfd8;
+  }
+
+  [data-dark="true"] .snow {
+    color: #ffffff;
+  }
+
+  .flake {
+    position: absolute;
+    top: 0;
+    left: var(--left);
+    animation: snow-fall var(--dur) linear var(--delay) infinite;
+  }
+
+  .flake-sway {
+    display: block;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    background: currentColor;
+    opacity: var(--opacity);
+    box-shadow: 0 0 3px currentColor;
+    animation: snow-sway var(--sway) ease-in-out infinite alternate;
+  }
+
+  @keyframes snow-fall {
+    from { transform: translateY(-5vh); }
+    to   { transform: translateY(105vh); }
+  }
+
+  @keyframes snow-sway {
+    from { transform: translateX(-18px); }
+    to   { transform: translateX(18px); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .snow { display: none; }
+  }
+</style>
+
+<script>
+  (function () {
+    if (new Date().getMonth() !== 11) {
+      var snow = document.querySelector(".snow");
+      if (snow) snow.remove();
+    }
+  })();
+</script>
+{% endif %}
